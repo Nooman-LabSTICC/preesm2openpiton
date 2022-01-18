@@ -75,4 +75,10 @@ Once the compilation can proceed sucessifully, the simulation will start and you
 
 > * openpiton 2 2 -V **-run** preesm_main **-debug**
 
-The **-debug** flag will open the ManyGUI automatically. The video above explains how to use ManyGUI. You can see more details of ManyGUI tool [here](https://github.com/Nooman-LabSTICC/manyGUI).
+The **-debug** flag will open the ManyGUI automatically. The video above explains how to use ManyGUI. You can see more details of ManyGUI tool [here](https://github.com/Nooman-LabSTICC/manyGUI). Specifically, you will found two videos on this link, describing how to use the tool. For convenience, the same videos are listed below:
+### Video tutorials for ManyGUI:
+
+### Version 1: 
+[Watch on YouTube](https://youtu.be/XOHMqZNIwks)
+### Version 2:
+[Watch on YouTube](https://youtu.be/VU6yRrICwsk)
