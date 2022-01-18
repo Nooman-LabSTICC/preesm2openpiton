@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="parameters" for="graph" id="parameters"/>
+    <key attr.name="variables" for="graph" id="variables"/>
+    <key attr.name="arguments" for="node" id="arguments"/>
+    <key attr.name="name" attr.type="string" for="graph"/>
+    <key attr.name="kind" attr.type="string" for="graph"/>
+    <key attr.name="name" attr.type="string" for="node"/>
+    <key attr.name="kind" attr.type="string" for="node"/>
+    <key attr.name="port_direction" attr.type="string" for="node"/>
+    <key attr.name="graph_desc" attr.type="string" for="node"/>
+    <key attr.name="nbRepeat" attr.type="int" for="node"/>
+    <key attr.name="memory_script" attr.type="string" for="node"/>
+    <key attr.name="edge_cons" attr.type="string" for="edge"/>
+    <key attr.name="edge_delay" attr.type="string" for="edge"/>
+    <key attr.name="edge_prod" attr.type="string" for="edge"/>
+    <key attr.name="data_type" attr.type="string" for="edge"/>
+    <key attr.name="target_port_modifier" attr.type="string" for="edge"/>
+    <key attr.name="source_port_modifier" attr.type="string" for="edge"/>
+    <graph edgedefault="directed" kind="sdf">
+        <data key="name">Cost_Parallel_Work.graphml</data>
+        <data key="kind">sdf</data>
+        <data key="variables">
+            <variable name="nbDisparity" value="19"/>
+            <variable name="Vert" value="1"/>
+            <variable name="Hor" value="0"/>
+            <variable name="Cost_Parallel_Work_height" value="375"/>
+            <variable name="Cost_Parallel_Work_minDisparity" value="0"/>
+            <variable name="Cost_Parallel_Work_scale" value="4"/>
+            <variable name="Cost_Parallel_Work_width" value="450"/>
+            <variable name="Cost_Parallel_Work_maxDisparity" value="19"/>
+            <variable name="Cost_Parallel_Work_truncValue" value="12"/>
+            <variable name="Cost_Parallel_Work_nbIterations" value="5"/>
+            <variable name="Cost_Parallel_Work_size" value="168750"/>
+        </data>
+        <node id="grayL" port_direction="Input">
+            <data key="name">grayL</data>
+            <data key="kind">port</data>
+            <data key="port_direction">Input</data>
+            <data key="arguments"/>
+        </node>
+        <node id="grayR" port_direction="Input">
+            <data key="name">grayR</data>
+            <data key="kind">port</data>
+            <data key="port_direction">Input</data>
+            <data key="arguments"/>
+        </node>
+        <node id="cenL" port_direction="Input">
+            <data key="name">cenL</data>
+            <data key="kind">port</data>
+            <data key="port_direction">Input</data>
+            <data key="arguments"/>
+        </node>
+        <node id="cenR" port_direction="Input">
+            <data key="name">cenR</data>
+            <data key="kind">port</data>
+            <data key="port_direction">Input</data>
+            <data key="arguments"/>
+        </node>
+        <node id="rgbL" port_direction="Input">
+            <data key="name">rgbL</data>
+            <data key="kind">port</data>
+            <data key="port_direction">Input</data>
+            <data key="arguments"/>
+        </node>
+        <node id="rawDisparity" port_direction="Output">
+            <data key="name">rawDisparity</data>
+            <data key="kind">port</data>
+            <data key="port_direction">Output</data>
+            <data key="arguments"/>
+        </node>
+        <node id="CostConstruction">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@1b140e32</data>
+            <data key="name">CostConstruction</data>
+            <data key="kind">vertex</data>
+            <data key="nbRepeat">19</data>
+            <data key="arguments">
+                <argument name="truncValue" value="Cost_Parallel_Work_truncValue"/>
+                <argument name="width" value="Cost_Parallel_Work_width"/>
+                <argument name="height" value="Cost_Parallel_Work_height"/>
+            </data>
+        </node>
+        <node id="disparitySelect">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@7fc16253</data>
+            <data key="name">disparitySelect</data>
+            <data key="kind">vertex</data>
+            <data key="nbRepeat">19</data>
+            <data key="memory_script">org.ietr.preesm.stereo/Code/Scripts/disparitySelect.bsh</data>
+            <data key="arguments">
+                <argument name="scale" value="Cost_Parallel_Work_scale"/>
+                <argument name="width" value="Cost_Parallel_Work_width"/>
+                <argument name="height" value="Cost_Parallel_Work_height"/>
+                <argument name="minDisparity" value="Cost_Parallel_Work_minDisparity"/>
+                <argument name="nbDisparities" value="nbDisparity"/>
+            </data>
+        </node>
+        <node id="AggregateCost">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@3fd82ad9</data>
+            <data key="name">AggregateCost</data>
+            <data key="kind">vertex</data>
+            <data key="nbRepeat">19</data>
+            <data key="arguments">
+                <argument name="width" value="Cost_Parallel_Work_width"/>
+                <argument name="height" value="Cost_Parallel_Work_height"/>
+                <argument name="nbIterations" value="Cost_Parallel_Work_nbIterations"/>
+            </data>
+        </node>
+        <node id="ComputeHorWeights">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@62433caa</data>
+            <data key="name">ComputeHorWeights</data>
+            <data key="kind">vertex</data>
+            <data key="nbRepeat">5</data>
+            <data key="arguments">
+                <argument name="horOrVert" value="Hor"/>
+                <argument name="width" value="Cost_Parallel_Work_width"/>
+                <argument name="height" value="Cost_Parallel_Work_height"/>
+            </data>
+        </node>
+        <node id="ComputeVertWeights">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@599ddb4e</data>
+            <data key="name">ComputeVertWeights</data>
+            <data key="kind">vertex</data>
+            <data key="nbRepeat">5</data>
+            <data key="arguments">
+                <argument name="horOrVert" value="Vert"/>
+                <argument name="width" value="Cost_Parallel_Work_width"/>
+                <argument name="height" value="Cost_Parallel_Work_height"/>
+            </data>
+        </node>
+        <node id="OffsetGen">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@2dbaf9d4</data>
+            <data key="name">OffsetGen</data>
+            <data key="kind">vertex</data>
+            <data key="nbRepeat">1</data>
+            <data key="arguments">
+                <argument name="nbIterations" value="Cost_Parallel_Work_nbIterations"/>
+            </data>
+        </node>
+        <node id="Broadcast0">
+            <data key="name">Broadcast0</data>
+            <data key="kind">Broadcast</data>
+            <data key="nbRepeat">1</data>
+            <data key="arguments">
+                <argument name="nbDisparity" value="nbDisparity"/>
+                <argument name="nbIterations" value="nbIterations"/>
+            </data>
+        </node>
+        <node id="Broadcast1">
+            <data key="name">Broadcast1</data>
+            <data key="kind">Broadcast</data>
+            <data key="nbRepeat">5</data>
+            <data key="arguments">
+                <argument name="size" value="size"/>
+            </data>
+        </node>
+        <node id="Broadcast2">
+            <data key="name">Broadcast2</data>
+            <data key="kind">Broadcast</data>
+            <data key="nbRepeat">1</data>
+            <data key="arguments">
+                <argument name="nbDisparity" value="nbDisparity"/>
+                <argument name="size" value="size"/>
+                <argument name="nbIterations" value="nbIterations"/>
+            </data>
+        </node>
+        <node id="Broadcast3">
+            <data key="name">Broadcast3</data>
+            <data key="kind">Broadcast</data>
+            <data key="nbRepeat">1</data>
+            <data key="arguments">
+                <argument name="nbDisparity" value="nbDisparity"/>
+                <argument name="size" value="size"/>
+                <argument name="nbIterations" value="nbIterations"/>
+            </data>
+        </node>
+        <node id="DisparityGen">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@534a8058</data>
+            <data key="name">DisparityGen</data>
+            <data key="kind">vertex</data>
+            <data key="nbRepeat">1</data>
+            <data key="arguments">
+                <argument name="minDisparity" value="Cost_Parallel_Work_minDisparity"/>
+                <argument name="maxDisparity" value="Cost_Parallel_Work_maxDisparity"/>
+            </data>
+        </node>
+        <node id="Broadcast4">
+            <data key="name">Broadcast4</data>
+            <data key="kind">Broadcast</data>
+            <data key="nbRepeat">1</data>
+            <data key="arguments">
+                <argument name="nbDisparity" value="nbDisparity"/>
+            </data>
+        </node>
+        <node id="Broadcast5">
+            <data key="name">Broadcast5</data>
+            <data key="kind">Broadcast</data>
+            <data key="nbRepeat">19</data>
+            <data key="arguments">
+                <argument name="size" value="size"/>
+            </data>
+        </node>
+        <edge source="Broadcast5" sourceport="out1_168750_0" target="disparitySelect" targetport="currentResult">
+            <data key="edge_cons">168750</data>
+            <data key="edge_delay">168750</data>
+            <data key="edge_prod">168750</data>
+            <data key="data_type">uchar</data>
+        </edge>
+        <edge source="disparitySelect" sourceport="backBestCost" target="disparitySelect" targetport="bestCostFeed">
+            <data key="edge_cons">168751</data>
+            <data key="edge_delay">168751</data>
+            <data key="edge_prod">168751</data>
+            <data key="data_type">float</data>
+        </edge>
+        <edge source="Broadcast5" sourceport="back_337500_0" target="CostConstruction" targetport="back">
+            <data key="edge_cons">1</data>
+            <data key="edge_delay">8</data>
+            <data key="edge_prod">1</data>
+            <data key="data_type">uchar</data>
+        </edge>
+        <edge source="OffsetGen" sourceport="offsets" target="Broadcast0" targetport="in">
+            <data key="edge_cons">5</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">5</data>
+            <data key="data_type">int</data>
+        </edge>
+        <edge source="Broadcast0" sourceport="out1_95_0" target="ComputeVertWeights" targetport="offset">
+            <data key="edge_cons">1</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">5</data>
+            <data key="data_type">int</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="Broadcast0" sourceport="out0_0_0" target="AggregateCost" targetport="offsets">
+            <data key="edge_cons">5</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">95</data>
+            <data key="data_type">int</data>
+        </edge>
+        <edge source="Broadcast0" sourceport="out2_100_0" target="ComputeHorWeights" targetport="offset">
+            <data key="edge_cons">1</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">5</data>
+            <data key="data_type">int</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="rgbL" sourceport="rgbL" target="Broadcast1" targetport="in">
+            <data key="edge_cons">506250</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">506250</data>
+            <data key="data_type">uchar</data>
+        </edge>
+        <edge source="Broadcast1" sourceport="out0_0_0" target="ComputeVertWeights" targetport="rgbL">
+            <data key="edge_cons">506250</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">506250</data>
+            <data key="data_type">uchar</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="Broadcast1" sourceport="out1_506250_0" target="ComputeHorWeights" targetport="rgbL">
+            <data key="edge_cons">506250</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">506250</data>
+            <data key="data_type">uchar</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="ComputeVertWeights" sourceport="weights" target="Broadcast2" targetport="in">
+            <data key="edge_cons">2531250</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">506250</data>
+            <data key="data_type">float</data>
+        </edge>
+        <edge source="ComputeHorWeights" sourceport="weights" target="Broadcast3" targetport="in">
+            <data key="edge_cons">2531250</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">506250</data>
+            <data key="data_type">float</data>
+        </edge>
+        <edge source="Broadcast2" sourceport="out_0_0" target="AggregateCost" targetport="vWeights">
+            <data key="edge_cons">2531250</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">48093750</data>
+            <data key="data_type">float</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="Broadcast3" sourceport="out_0_0" target="AggregateCost" targetport="hWeights">
+            <data key="edge_cons">2531250</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">48093750</data>
+            <data key="data_type">float</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="grayL" sourceport="grayL" target="CostConstruction" targetport="grayL">
+            <data key="edge_cons">168750</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">168750</data>
+            <data key="data_type">float</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="grayR" sourceport="grayR" target="CostConstruction" targetport="grayR">
+            <data key="edge_cons">168750</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">168750</data>
+            <data key="data_type">float</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="cenL" sourceport="cenL" target="CostConstruction" targetport="cenL">
+            <data key="edge_cons">168750</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">168750</data>
+            <data key="data_type">uchar</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="cenR" sourceport="cenR" target="CostConstruction" targetport="cenR">
+            <data key="edge_cons">168750</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">168750</data>
+            <data key="data_type">uchar</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="DisparityGen" sourceport="disparities" target="Broadcast4" targetport="in">
+            <data key="edge_cons">19</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">19</data>
+            <data key="data_type">uchar</data>
+        </edge>
+        <edge source="Broadcast4" sourceport="out0_0_0" target="CostConstruction" targetport="disparity">
+            <data key="edge_cons">1</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">19</data>
+            <data key="data_type">uchar</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="Broadcast4" sourceport="out1_19_0" target="disparitySelect" targetport="disparity">
+            <data key="edge_cons">1</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">19</data>
+            <data key="data_type">uchar</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="CostConstruction" sourceport="disparityError" target="AggregateCost" targetport="disparityError">
+            <data key="edge_cons">168750</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">168750</data>
+            <data key="data_type">float</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="AggregateCost" sourceport="aggregatedDisparity" target="disparitySelect" targetport="aggregatedDisparity">
+            <data key="edge_cons">168750</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">168750</data>
+            <data key="data_type">float</data>
+        </edge>
+        <edge source="disparitySelect" sourceport="result" target="Broadcast5" targetport="in">
+            <data key="edge_cons">168750</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">168750</data>
+            <data key="data_type">uchar</data>
+        </edge>
+        <edge source="Broadcast5" sourceport="out0_0_0" target="rawDisparity" targetport="rawDisparity">
+            <data key="edge_cons">168750</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">168750</data>
+            <data key="data_type">uchar</data>
+            <data key="source_port_modifier">write_only</data>
+        </edge>
+    </graph>
+</graphml>

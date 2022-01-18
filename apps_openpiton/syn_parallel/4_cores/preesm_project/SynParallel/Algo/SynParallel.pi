@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="parameters" for="graph" id="parameters"/>
+    <key attr.name="variables" for="graph" id="variables"/>
+    <key attr.name="arguments" for="node" id="arguments"/>
+    <key attr.name="name" attr.type="string" for="graph"/>
+    <key attr.name="graph_desc" attr.type="string" for="node"/>
+    <graph edgedefault="directed">
+        <data key="name">SynParallel</data>
+        <node expr="840" id="msg_size" kind="param"/>
+        <node expr="msg_size/7" id="slice_size" kind="param"/>
+        <node id="Prod" kind="actor">
+            <data key="graph_desc">Code/include/prod.h</data>
+            <loop name="produce">
+                <param direction="IN" isConfig="true"
+                    name="msg_size" type="int"/>
+                <param direction="OUT" isConfig="false"
+                    name="prod_output" type="unsigned char "/>
+            </loop>
+            <port kind="cfg_input" name="msg_size"/>
+            <port annotation="NONE" expr="msg_size" kind="output" name="prod_output"/>
+        </node>
+        <node id="Processing" kind="actor">
+            <data key="graph_desc">Code/include/processing.h</data>
+            <loop name="processing">
+                <param direction="IN" isConfig="true"
+                    name="slice_size" type="int"/>
+                <param direction="IN" isConfig="false"
+                    name="input" type="unsigned char "/>
+                <param direction="OUT" isConfig="false"
+                    name="output" type="unsigned char "/>
+            </loop>
+            <port kind="cfg_input" name="slice_size"/>
+            <port annotation="NONE" expr="slice_size"
+                kind="input" name="input"/>
+            <port annotation="NONE" expr="slice_size"
+                kind="output" name="output"/>
+        </node>
+        <node id="Cons" kind="actor">
+            <data key="graph_desc">Code/include/cons.h</data>
+            <loop name="consume">
+                <param direction="IN" isConfig="true"
+                    name="msg_size" type="int"/>
+                <param direction="IN" isConfig="false"
+                    name="cons_input" type="unsigned char "/>
+            </loop>
+            <port kind="cfg_input" name="msg_size"/>
+            <port annotation="NONE" expr="msg_size" kind="input" name="cons_input"/>
+        </node>
+        <edge kind="fifo" source="Prod" sourceport="prod_output"
+            target="Processing" targetport="input" type="unsigned char"/>
+        <edge kind="fifo" source="Processing" sourceport="output"
+            target="Cons" targetport="cons_input" type="unsigned char"/>
+        <edge kind="dependency" source="msg_size" target="Prod" targetport="msg_size"/>
+        <edge kind="dependency" source="msg_size" target="Cons" targetport="msg_size"/>
+        <edge kind="dependency" source="msg_size" target="slice_size"/>
+        <edge kind="dependency" source="slice_size"
+            target="Processing" targetport="slice_size"/>
+    </graph>
+</graphml>

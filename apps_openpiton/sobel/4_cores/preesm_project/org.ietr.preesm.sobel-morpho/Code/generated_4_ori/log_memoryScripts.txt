@@ -1,0 +1,36 @@
+# Memory scripts summary
+- Independent match trees : *2*
+- Total number of buffers in these trees: From 11 to 2 buffers.
+- Total size of these buffers: From 538560 to 206272 (61.69934640522876%).
+
+# Match tree optimization log
+## Tree of 6 buffers
+### Original buffer list:
+> [Split_0.input[101376], explode_Split_0_output.input[115456], explode_Split_0_output.output_0[28864], explode_Split_0_output.output_1[28864], explode_Split_0_output.output_2[28864], explode_Split_0_output.output_3[28864]]
+
+### Match application log: 
+- __Step 0 - 4 matches__
+>explode_Split_0_output.output_0[0..28864[=>explode_Split_0_output.input[0..28864[ explode_Split_0_output.output_1[0..28864[=>explode_Split_0_output.input[28864..57728[ explode_Split_0_output.output_2[0..28864[=>explode_Split_0_output.input[57728..86592[ explode_Split_0_output.output_3[0..28864[=>explode_Split_0_output.input[86592..115456[ 
+- __Step 5 - 4 matches__
+>explode_Split_0_output.input[0..28864[=>Split_0.input[-1760..27104[, explode_Split_0_output.input[28864..57728[=>Split_0.input[23584..52448[, explode_Split_0_output.input[57728..86592[=>Split_0.input[48928..77792[, explode_Split_0_output.input[86592..115456[=>Split_0.input[74272..103136[
+
+### Tree summary:
+- From 6 buffers to 1 buffers.
+- From 335808 bytes to 104896 bytes (68.76310272536688%)
+
+### Unapplied matches:
+>
+## Tree of 5 buffers
+### Original buffer list:
+> [implode_display_0_y.y_0[25344], implode_display_0_y.y_1[25344], implode_display_0_y.y_2[25344], implode_display_0_y.y_3[25344], implode_display_0_y.output[101376]]
+
+### Match application log: 
+- __Step 0 - 4 matches__
+>implode_display_0_y.y_0[0..25344[=>implode_display_0_y.output[0..25344[ implode_display_0_y.y_1[0..25344[=>implode_display_0_y.output[25344..50688[ implode_display_0_y.y_2[0..25344[=>implode_display_0_y.output[50688..76032[ implode_display_0_y.y_3[0..25344[=>implode_display_0_y.output[76032..101376[ 
+
+### Tree summary:
+- From 5 buffers to 1 buffers.
+- From 202752 bytes to 101376 bytes (50.0%)
+
+### Unapplied matches:
+>

@@ -1,0 +1,36 @@
+# Memory scripts summary
+- Independent match trees : *2*
+- Total number of buffers in these trees: From 19 to 2 buffers.
+- Total size of these buffers: From 566720 to 206272 (63.60248447204969%).
+
+# Match tree optimization log
+## Tree of 10 buffers
+### Original buffer list:
+> [Split_0.input[101376], explode_Split_0_output.input[129536], explode_Split_0_output.output_0[16192], explode_Split_0_output.output_1[16192], explode_Split_0_output.output_2[16192], explode_Split_0_output.output_3[16192], explode_Split_0_output.output_4[16192], explode_Split_0_output.output_5[16192], explode_Split_0_output.output_6[16192], explode_Split_0_output.output_7[16192]]
+
+### Match application log: 
+- __Step 0 - 8 matches__
+>explode_Split_0_output.output_0[0..16192[=>explode_Split_0_output.input[0..16192[ explode_Split_0_output.output_1[0..16192[=>explode_Split_0_output.input[16192..32384[ explode_Split_0_output.output_2[0..16192[=>explode_Split_0_output.input[32384..48576[ explode_Split_0_output.output_3[0..16192[=>explode_Split_0_output.input[48576..64768[ explode_Split_0_output.output_4[0..16192[=>explode_Split_0_output.input[64768..80960[ explode_Split_0_output.output_5[0..16192[=>explode_Split_0_output.input[80960..97152[ explode_Split_0_output.output_6[0..16192[=>explode_Split_0_output.input[97152..113344[ explode_Split_0_output.output_7[0..16192[=>explode_Split_0_output.input[113344..129536[ 
+- __Step 5 - 8 matches__
+>explode_Split_0_output.input[0..16192[=>Split_0.input[-1760..14432[, explode_Split_0_output.input[16192..32384[=>Split_0.input[10912..27104[, explode_Split_0_output.input[32384..48576[=>Split_0.input[23584..39776[, explode_Split_0_output.input[48576..64768[=>Split_0.input[36256..52448[, explode_Split_0_output.input[64768..80960[=>Split_0.input[48928..65120[, explode_Split_0_output.input[80960..97152[=>Split_0.input[61600..77792[, explode_Split_0_output.input[97152..113344[=>Split_0.input[74272..90464[, explode_Split_0_output.input[113344..129536[=>Split_0.input[86944..103136[
+
+### Tree summary:
+- From 10 buffers to 1 buffers.
+- From 363968 bytes to 104896 bytes (71.1798839458414%)
+
+### Unapplied matches:
+>
+## Tree of 9 buffers
+### Original buffer list:
+> [implode_display_0_y.y_0[12672], implode_display_0_y.y_1[12672], implode_display_0_y.y_2[12672], implode_display_0_y.y_3[12672], implode_display_0_y.y_4[12672], implode_display_0_y.y_5[12672], implode_display_0_y.y_6[12672], implode_display_0_y.y_7[12672], implode_display_0_y.output[101376]]
+
+### Match application log: 
+- __Step 0 - 8 matches__
+>implode_display_0_y.y_0[0..12672[=>implode_display_0_y.output[0..12672[ implode_display_0_y.y_1[0..12672[=>implode_display_0_y.output[12672..25344[ implode_display_0_y.y_2[0..12672[=>implode_display_0_y.output[25344..38016[ implode_display_0_y.y_3[0..12672[=>implode_display_0_y.output[38016..50688[ implode_display_0_y.y_4[0..12672[=>implode_display_0_y.output[50688..63360[ implode_display_0_y.y_5[0..12672[=>implode_display_0_y.output[63360..76032[ implode_display_0_y.y_6[0..12672[=>implode_display_0_y.output[76032..88704[ implode_display_0_y.y_7[0..12672[=>implode_display_0_y.output[88704..101376[ 
+
+### Tree summary:
+- From 9 buffers to 1 buffers.
+- From 202752 bytes to 101376 bytes (50.0%)
+
+### Unapplied matches:
+>

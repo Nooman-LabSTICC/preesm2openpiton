@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+   <vertices>
+      <vertex id="scenario" x="57" y="315"/>
+      <vertex id="Display Gantt" x="589" y="70"/>
+      <vertex id="Scheduling" x="399" y="217"/>
+      <vertex id="MEG Builder" x="589" y="283"/>
+      <vertex id="Memory Allocation" x="1233" y="304"/>
+      <vertex id="Code Generation" x="1432" y="296"/>
+      <vertex id="StaticPiMM2SDF" x="213" y="225"/>
+      <vertex id="MemEx Updater" x="754" y="262"/>
+      <vertex id="Scripts" x="936" y="262"/>
+      <vertex id="Mem Bounds" x="1069" y="244"/>
+      <vertex id="PiMMExport" x="399" y="92"/>
+   </vertices>
+</layout>

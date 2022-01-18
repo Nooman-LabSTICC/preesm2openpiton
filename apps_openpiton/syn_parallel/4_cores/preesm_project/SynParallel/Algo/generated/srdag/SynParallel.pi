@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="parameters" for="graph" id="parameters"/>
+    <key attr.name="variables" for="graph" id="variables"/>
+    <key attr.name="arguments" for="node" id="arguments"/>
+    <key attr.name="name" attr.type="string" for="graph"/>
+    <key attr.name="graph_desc" attr.type="string" for="node"/>
+    <graph edgedefault="directed">
+        <data key="name">SynParallel</data>
+        <node expr="840" id="_msg_size" kind="param"/>
+        <node expr="120" id="_slice_size" kind="param"/>
+        <node id="Prod_0" kind="actor" period="0">
+            <data key="graph_desc">Code/include/prod.h</data>
+            <loop name="produce">
+                <param direction="IN" isConfig="true"
+                    name="msg_size" type="int"/>
+                <param direction="OUT" isConfig="false"
+                    name="prod_output" type="unsigned char "/>
+            </loop>
+            <port kind="cfg_input" name="msg_size"/>
+            <port annotation="NONE" expr="840" kind="output" name="prod_output"/>
+        </node>
+        <node id="Processing_0" kind="actor" period="0">
+            <data key="graph_desc">Code/include/processing.h</data>
+            <loop name="processing">
+                <param direction="IN" isConfig="true"
+                    name="slice_size" type="int"/>
+                <param direction="IN" isConfig="false"
+                    name="input" type="unsigned char "/>
+                <param direction="OUT" isConfig="false"
+                    name="output" type="unsigned char "/>
+            </loop>
+            <port kind="cfg_input" name="slice_size"/>
+            <port annotation="NONE" expr="120" kind="input" name="input"/>
+            <port annotation="NONE" expr="120" kind="output" name="output"/>
+        </node>
+        <node id="Processing_1" kind="actor" period="0">
+            <data key="graph_desc">Code/include/processing.h</data>
+            <loop name="processing">
+                <param direction="IN" isConfig="true"
+                    name="slice_size" type="int"/>
+                <param direction="IN" isConfig="false"
+                    name="input" type="unsigned char "/>
+                <param direction="OUT" isConfig="false"
+                    name="output" type="unsigned char "/>
+            </loop>
+            <port kind="cfg_input" name="slice_size"/>
+            <port annotation="NONE" expr="120" kind="input" name="input"/>
+            <port annotation="NONE" expr="120" kind="output" name="output"/>
+        </node>
+        <node id="Processing_2" kind="actor" period="0">
+            <data key="graph_desc">Code/include/processing.h</data>
+            <loop name="processing">
+                <param direction="IN" isConfig="true"
+                    name="slice_size" type="int"/>
+                <param direction="IN" isConfig="false"
+                    name="input" type="unsigned char "/>
+                <param direction="OUT" isConfig="false"
+                    name="output" type="unsigned char "/>
+            </loop>
+            <port kind="cfg_input" name="slice_size"/>
+            <port annotation="NONE" expr="120" kind="input" name="input"/>
+            <port annotation="NONE" expr="120" kind="output" name="output"/>
+        </node>
+        <node id="Processing_3" kind="actor" period="0">
+            <data key="graph_desc">Code/include/processing.h</data>
+            <loop name="processing">
+                <param direction="IN" isConfig="true"
+                    name="slice_size" type="int"/>
+                <param direction="IN" isConfig="false"
+                    name="input" type="unsigned char "/>
+                <param direction="OUT" isConfig="false"
+                    name="output" type="unsigned char "/>
+            </loop>
+            <port kind="cfg_input" name="slice_size"/>
+            <port annotation="NONE" expr="120" kind="input" name="input"/>
+            <port annotation="NONE" expr="120" kind="output" name="output"/>
+        </node>
+        <node id="Processing_4" kind="actor" period="0">
+            <data key="graph_desc">Code/include/processing.h</data>
+            <loop name="processing">
+                <param direction="IN" isConfig="true"
+                    name="slice_size" type="int"/>
+                <param direction="IN" isConfig="false"
+                    name="input" type="unsigned char "/>
+                <param direction="OUT" isConfig="false"
+                    name="output" type="unsigned char "/>
+            </loop>
+            <port kind="cfg_input" name="slice_size"/>
+            <port annotation="NONE" expr="120" kind="input" name="input"/>
+            <port annotation="NONE" expr="120" kind="output" name="output"/>
+        </node>
+        <node id="Processing_5" kind="actor" period="0">
+            <data key="graph_desc">Code/include/processing.h</data>
+            <loop name="processing">
+                <param direction="IN" isConfig="true"
+                    name="slice_size" type="int"/>
+                <param direction="IN" isConfig="false"
+                    name="input" type="unsigned char "/>
+                <param direction="OUT" isConfig="false"
+                    name="output" type="unsigned char "/>
+            </loop>
+            <port kind="cfg_input" name="slice_size"/>
+            <port annotation="NONE" expr="120" kind="input" name="input"/>
+            <port annotation="NONE" expr="120" kind="output" name="output"/>
+        </node>
+        <node id="Processing_6" kind="actor" period="0">
+            <data key="graph_desc">Code/include/processing.h</data>
+            <loop name="processing">
+                <param direction="IN" isConfig="true"
+                    name="slice_size" type="int"/>
+                <param direction="IN" isConfig="false"
+                    name="input" type="unsigned char "/>
+                <param direction="OUT" isConfig="false"
+                    name="output" type="unsigned char "/>
+            </loop>
+            <port kind="cfg_input" name="slice_size"/>
+            <port annotation="NONE" expr="120" kind="input" name="input"/>
+            <port annotation="NONE" expr="120" kind="output" name="output"/>
+        </node>
+        <node id="explode_Prod_0_prod_output" kind="fork">
+            <port annotation="READ_ONLY" expr="840" kind="input" name="input"/>
+            <port annotation="WRITE_ONLY" expr="120"
+                kind="output" name="prod_output_0"/>
+            <port annotation="WRITE_ONLY" expr="120"
+                kind="output" name="prod_output_1"/>
+            <port annotation="WRITE_ONLY" expr="120"
+                kind="output" name="prod_output_2"/>
+            <port annotation="WRITE_ONLY" expr="120"
+                kind="output" name="prod_output_3"/>
+            <port annotation="WRITE_ONLY" expr="120"
+                kind="output" name="prod_output_4"/>
+            <port annotation="WRITE_ONLY" expr="120"
+                kind="output" name="prod_output_5"/>
+            <port annotation="WRITE_ONLY" expr="120"
+                kind="output" name="prod_output_6"/>
+        </node>
+        <node id="Cons_0" kind="actor" period="0">
+            <data key="graph_desc">Code/include/cons.h</data>
+            <loop name="consume">
+                <param direction="IN" isConfig="true"
+                    name="msg_size" type="int"/>
+                <param direction="IN" isConfig="false"
+                    name="cons_input" type="unsigned char "/>
+            </loop>
+            <port kind="cfg_input" name="msg_size"/>
+            <port annotation="NONE" expr="840" kind="input" name="cons_input"/>
+        </node>
+        <node id="implode_Cons_0_cons_input" kind="join">
+            <port annotation="READ_ONLY" expr="120" kind="input" name="cons_input_0"/>
+            <port annotation="READ_ONLY" expr="120" kind="input" name="cons_input_1"/>
+            <port annotation="READ_ONLY" expr="120" kind="input" name="cons_input_2"/>
+            <port annotation="READ_ONLY" expr="120" kind="input" name="cons_input_3"/>
+            <port annotation="READ_ONLY" expr="120" kind="input" name="cons_input_4"/>
+            <port annotation="READ_ONLY" expr="120" kind="input" name="cons_input_5"/>
+            <port annotation="READ_ONLY" expr="120" kind="input" name="cons_input_6"/>
+            <port annotation="WRITE_ONLY" expr="840"
+                kind="output" name="output"/>
+        </node>
+        <edge kind="fifo" source="Prod_0"
+            sourceport="prod_output"
+            target="explode_Prod_0_prod_output"
+            targetport="input" type="unsigned char"/>
+        <edge kind="fifo" source="explode_Prod_0_prod_output"
+            sourceport="prod_output_0" target="Processing_0"
+            targetport="input" type="unsigned char"/>
+        <edge kind="fifo" source="explode_Prod_0_prod_output"
+            sourceport="prod_output_1" target="Processing_1"
+            targetport="input" type="unsigned char"/>
+        <edge kind="fifo" source="explode_Prod_0_prod_output"
+            sourceport="prod_output_2" target="Processing_2"
+            targetport="input" type="unsigned char"/>
+        <edge kind="fifo" source="explode_Prod_0_prod_output"
+            sourceport="prod_output_3" target="Processing_3"
+            targetport="input" type="unsigned char"/>
+        <edge kind="fifo" source="explode_Prod_0_prod_output"
+            sourceport="prod_output_4" target="Processing_4"
+            targetport="input" type="unsigned char"/>
+        <edge kind="fifo" source="explode_Prod_0_prod_output"
+            sourceport="prod_output_5" target="Processing_5"
+            targetport="input" type="unsigned char"/>
+        <edge kind="fifo" source="explode_Prod_0_prod_output"
+            sourceport="prod_output_6" target="Processing_6"
+            targetport="input" type="unsigned char"/>
+        <edge kind="fifo" source="implode_Cons_0_cons_input"
+            sourceport="output" target="Cons_0"
+            targetport="cons_input" type="unsigned char"/>
+        <edge kind="fifo" source="Processing_0"
+            sourceport="output"
+            target="implode_Cons_0_cons_input"
+            targetport="cons_input_0" type="unsigned char"/>
+        <edge kind="fifo" source="Processing_1"
+            sourceport="output"
+            target="implode_Cons_0_cons_input"
+            targetport="cons_input_1" type="unsigned char"/>
+        <edge kind="fifo" source="Processing_2"
+            sourceport="output"
+            target="implode_Cons_0_cons_input"
+            targetport="cons_input_2" type="unsigned char"/>
+        <edge kind="fifo" source="Processing_3"
+            sourceport="output"
+            target="implode_Cons_0_cons_input"
+            targetport="cons_input_3" type="unsigned char"/>
+        <edge kind="fifo" source="Processing_4"
+            sourceport="output"
+            target="implode_Cons_0_cons_input"
+            targetport="cons_input_4" type="unsigned char"/>
+        <edge kind="fifo" source="Processing_5"
+            sourceport="output"
+            target="implode_Cons_0_cons_input"
+            targetport="cons_input_5" type="unsigned char"/>
+        <edge kind="fifo" source="Processing_6"
+            sourceport="output"
+            target="implode_Cons_0_cons_input"
+            targetport="cons_input_6" type="unsigned char"/>
+        <edge kind="dependency" source="_msg_size"
+            target="Prod_0" targetport="msg_size"/>
+        <edge kind="dependency" source="_slice_size"
+            target="Processing_0" targetport="slice_size"/>
+        <edge kind="dependency" source="_slice_size"
+            target="Processing_1" targetport="slice_size"/>
+        <edge kind="dependency" source="_slice_size"
+            target="Processing_2" targetport="slice_size"/>
+        <edge kind="dependency" source="_slice_size"
+            target="Processing_3" targetport="slice_size"/>
+        <edge kind="dependency" source="_slice_size"
+            target="Processing_4" targetport="slice_size"/>
+        <edge kind="dependency" source="_slice_size"
+            target="Processing_5" targetport="slice_size"/>
+        <edge kind="dependency" source="_slice_size"
+            target="Processing_6" targetport="slice_size"/>
+        <edge kind="dependency" source="_msg_size"
+            target="Cons_0" targetport="msg_size"/>
+    </graph>
+</graphml>

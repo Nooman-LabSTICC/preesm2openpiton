@@ -1,0 +1,776 @@
+
+<data>
+	<event
+		start="0"
+		end="100"
+		title="ReadYUV_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_ReadYUV_0_(x1).</event>
+	<event
+		start="100"
+		end="101"
+		title="Stabilization_0_DuplicateFrame_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Stabilization_0_DuplicateFrame_0_(x1).</event>
+	<event
+		start="101"
+		end="201"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_DivideBlocks_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_DivideBlocks_0_(x1).</event>
+	<event
+		start="201"
+		end="202"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_explode_Stabilization_0_ComputeBlockMotionVectorss_0_DivideBlocks_0_blocksCoord (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_explode_Stabilization_0_ComputeBlockMotionVectorss_0_DivideBlocks_0_blocksCoord_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_0_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_16 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_16_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_32 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_32_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_48 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_48_(x1).</event>
+	<event
+		start="602"
+		end="702"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_64 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_64_(x1).</event>
+	<event
+		start="702"
+		end="703"
+		title="Stabilization_0_implode_Stabilization_0_FindDominatingMotion_0_vectors (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Stabilization_0_implode_Stabilization_0_FindDominatingMotion_0_vectors_(x1).</event>
+	<event
+		start="703"
+		end="803"
+		title="Stabilization_0_FindDominatingMotion_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Stabilization_0_FindDominatingMotion_0_(x1).</event>
+	<event
+		start="903"
+		end="904"
+		title="Stabilization_0_brFilteredMotion_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Stabilization_0_brFilteredMotion_0_(x1).</event>
+	<event
+		start="904"
+		end="1004"
+		title="Stabilization_0_renderFrame_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Stabilization_0_renderFrame_0_(x1).</event>
+	<event
+		start="1004"
+		end="1005"
+		title="Stabilization_0_BrY_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Stabilization_0_BrY_0_(x1).</event>
+	<event
+		start="1005"
+		end="1006"
+		title="Stabilization_end_out_BrY_out_1 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Stabilization_end_out_BrY_out_1_(x1).</event>
+	<event
+		start="1006"
+		end="1106"
+		title="DisplayYUV_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_DisplayYUV_0_(x1).</event>
+	<event
+		start="0"
+		end="1"
+		title="Stabilization_init_in_ComputeBlockMotionVectorss_previousFrame (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Stabilization_init_in_ComputeBlockMotionVectorss_previousFrame_(x1).</event>
+	<event
+		start="1"
+		end="2"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_DuplicatePreviousFrame_0 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_DuplicatePreviousFrame_0_(x1).</event>
+	<event
+		start="201"
+		end="202"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_explode_Stabilization_0_ComputeBlockMotionVectorss_0_DivideBlocks_0_blocksData (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_explode_Stabilization_0_ComputeBlockMotionVectorss_0_DivideBlocks_0_blocksData_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_1 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_1_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_17 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_17_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_33 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_33_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_49 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_49_(x1).</event>
+	<event
+		start="602"
+		end="702"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_65 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_65_(x1).</event>
+	<event
+		start="803"
+		end="903"
+		title="Stabilization_0_AccumulateMotion_0 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Stabilization_0_AccumulateMotion_0_(x1).</event>
+	<event
+		start="903"
+		end="904"
+		title="Stabilization_0_DuplicateAccumulatedMotion_0 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Stabilization_0_DuplicateAccumulatedMotion_0_(x1).</event>
+	<event
+		start="1004"
+		end="1005"
+		title="Stabilization_0_BrU_0 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Stabilization_0_BrU_0_(x1).</event>
+	<event
+		start="1005"
+		end="1006"
+		title="DuplicateU_0 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_DuplicateU_0_(x1).</event>
+	<event
+		start="1006"
+		end="1106"
+		title="WriteYUV_0 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_WriteYUV_0_(x1).</event>
+	<event
+		start="0"
+		end="1"
+		title="Stabilization_init_in_AccumulateMotion_accumulatedMotionIn (x1)"
+		mapping="Core10"
+		color="#c896fa"
+		>Step_Stabilization_init_in_AccumulateMotion_accumulatedMotionIn_(x1).</event>
+	<event
+		start="1"
+		end="2"
+		title="Stabilization_init_in_AccumulateMotion_filteredMotionIn (x1)"
+		mapping="Core10"
+		color="#c896fa"
+		>Step_Stabilization_init_in_AccumulateMotion_filteredMotionIn_(x1).</event>
+	<event
+		start="2"
+		end="3"
+		title="Stabilization_init_in_renderFrame_uPrev (x1)"
+		mapping="Core10"
+		color="#c896fa"
+		>Step_Stabilization_init_in_renderFrame_uPrev_(x1).</event>
+	<event
+		start="3"
+		end="4"
+		title="Stabilization_init_in_renderFrame_vPrev (x1)"
+		mapping="Core10"
+		color="#c896fa"
+		>Step_Stabilization_init_in_renderFrame_vPrev_(x1).</event>
+	<event
+		start="4"
+		end="5"
+		title="Stabilization_init_in_renderFrame_yPrev (x1)"
+		mapping="Core10"
+		color="#c896fa"
+		>Step_Stabilization_init_in_renderFrame_yPrev_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_10 (x1)"
+		mapping="Core10"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_10_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_26 (x1)"
+		mapping="Core10"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_26_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_42 (x1)"
+		mapping="Core10"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_42_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_58 (x1)"
+		mapping="Core10"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_58_(x1).</event>
+	<event
+		start="1004"
+		end="1005"
+		title="Stabilization_0_BrV_0 (x1)"
+		mapping="Core10"
+		color="#c896fa"
+		>Step_Stabilization_0_BrV_0_(x1).</event>
+	<event
+		start="1005"
+		end="1006"
+		title="Stabilization_end_out_BrU_out_1 (x1)"
+		mapping="Core10"
+		color="#c896fa"
+		>Step_Stabilization_end_out_BrU_out_1_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_11 (x1)"
+		mapping="Core11"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_11_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_27 (x1)"
+		mapping="Core11"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_27_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_43 (x1)"
+		mapping="Core11"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_43_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_59 (x1)"
+		mapping="Core11"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_59_(x1).</event>
+	<event
+		start="1005"
+		end="1006"
+		title="Stabilization_end_out_BrV_out_1 (x1)"
+		mapping="Core11"
+		color="#c896fa"
+		>Step_Stabilization_end_out_BrV_out_1_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_12 (x1)"
+		mapping="Core12"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_12_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_28 (x1)"
+		mapping="Core12"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_28_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_44 (x1)"
+		mapping="Core12"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_44_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_60 (x1)"
+		mapping="Core12"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_60_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_13 (x1)"
+		mapping="Core13"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_13_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_29 (x1)"
+		mapping="Core13"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_29_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_45 (x1)"
+		mapping="Core13"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_45_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_61 (x1)"
+		mapping="Core13"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_61_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_15 (x1)"
+		mapping="Core14"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_15_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_31 (x1)"
+		mapping="Core14"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_31_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_47 (x1)"
+		mapping="Core14"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_47_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_63 (x1)"
+		mapping="Core14"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_63_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_14 (x1)"
+		mapping="Core15"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_14_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_30 (x1)"
+		mapping="Core15"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_30_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_46 (x1)"
+		mapping="Core15"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_46_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_62 (x1)"
+		mapping="Core15"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_62_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_18 (x1)"
+		mapping="Core2"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_18_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_2 (x1)"
+		mapping="Core2"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_2_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_34 (x1)"
+		mapping="Core2"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_34_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_50 (x1)"
+		mapping="Core2"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_50_(x1).</event>
+	<event
+		start="1005"
+		end="1006"
+		title="DuplicateV_0 (x1)"
+		mapping="Core2"
+		color="#c896fa"
+		>Step_DuplicateV_0_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_19 (x1)"
+		mapping="Core3"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_19_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_3 (x1)"
+		mapping="Core3"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_3_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_35 (x1)"
+		mapping="Core3"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_35_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_51 (x1)"
+		mapping="Core3"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_51_(x1).</event>
+	<event
+		start="1005"
+		end="1006"
+		title="DuplicateY_0 (x1)"
+		mapping="Core3"
+		color="#c896fa"
+		>Step_DuplicateY_0_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_20 (x1)"
+		mapping="Core4"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_20_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_36 (x1)"
+		mapping="Core4"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_36_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_4 (x1)"
+		mapping="Core4"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_4_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_52 (x1)"
+		mapping="Core4"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_52_(x1).</event>
+	<event
+		start="904"
+		end="905"
+		title="Stabilization_end_out_DuplicateAccumulatedMotion_out_1 (x1)"
+		mapping="Core4"
+		color="#c896fa"
+		>Step_Stabilization_end_out_DuplicateAccumulatedMotion_out_1_(x1).</event>
+	<event
+		start="101"
+		end="102"
+		title="Stabilization_end_out_DuplicateFrame_out_1 (x1)"
+		mapping="Core5"
+		color="#c896fa"
+		>Step_Stabilization_end_out_DuplicateFrame_out_1_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_21 (x1)"
+		mapping="Core5"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_21_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_37 (x1)"
+		mapping="Core5"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_37_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_5 (x1)"
+		mapping="Core5"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_5_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_53 (x1)"
+		mapping="Core5"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_53_(x1).</event>
+	<event
+		start="904"
+		end="905"
+		title="Stabilization_end_out_brFilteredMotion_out_1 (x1)"
+		mapping="Core5"
+		color="#c896fa"
+		>Step_Stabilization_end_out_brFilteredMotion_out_1_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_22 (x1)"
+		mapping="Core6"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_22_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_38 (x1)"
+		mapping="Core6"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_38_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_54 (x1)"
+		mapping="Core6"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_54_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_6 (x1)"
+		mapping="Core6"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_6_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_23 (x1)"
+		mapping="Core7"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_23_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_39 (x1)"
+		mapping="Core7"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_39_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_55 (x1)"
+		mapping="Core7"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_55_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_7 (x1)"
+		mapping="Core7"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_7_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_24 (x1)"
+		mapping="Core8"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_24_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_40 (x1)"
+		mapping="Core8"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_40_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_56 (x1)"
+		mapping="Core8"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_56_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_8 (x1)"
+		mapping="Core8"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_8_(x1).</event>
+	<event
+		start="202"
+		end="302"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_25 (x1)"
+		mapping="Core9"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_25_(x1).</event>
+	<event
+		start="302"
+		end="402"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_41 (x1)"
+		mapping="Core9"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_41_(x1).</event>
+	<event
+		start="402"
+		end="502"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_57 (x1)"
+		mapping="Core9"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_57_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_9 (x1)"
+		mapping="Core9"
+		color="#c896fa"
+		>Step_Stabilization_0_ComputeBlockMotionVectorss_0_ComputeBlockMotionVector_9_(x1).</event>
+	<perfs>
+		work="7325"
+		span="0"
+		impl_length="1106"
+	impl_nbCores="16"
+		impl_nbUsedCores="16"
+		<core
+			id="Core0"
+			load="1006"
+			used_mem="2228976"
+			>Core_Core0.</core>
+		<core
+			id="Core1"
+			load="706"
+			used_mem="5570344"
+			>Core_Core1.</core>
+		<core
+			id="Core3"
+			load="401"
+			used_mem="970400"
+			>Core_Core3.</core>
+		<core
+			id="Core2"
+			load="401"
+			used_mem="463880"
+			>Core_Core2.</core>
+		<core
+			id="Core4"
+			load="401"
+			used_mem="295048"
+			>Core_Core4.</core>
+		<core
+			id="Core5"
+			load="402"
+			used_mem="367768"
+			>Core_Core5.</core>
+		<core
+			id="Core6"
+			load="400"
+			used_mem="295040"
+			>Core_Core6.</core>
+		<core
+			id="Core7"
+			load="400"
+			used_mem="295040"
+			>Core_Core7.</core>
+		<core
+			id="Core8"
+			load="400"
+			used_mem="295040"
+			>Core_Core8.</core>
+		<core
+			id="Core9"
+			load="400"
+			used_mem="295040"
+			>Core_Core9.</core>
+		<core
+			id="Core10"
+			load="407"
+			used_mem="857856"
+			>Core_Core10.</core>
+		<core
+			id="Core11"
+			load="401"
+			used_mem="351320"
+			>Core_Core11.</core>
+		<core
+			id="Core12"
+			load="400"
+			used_mem="295040"
+			>Core_Core12.</core>
+		<core
+			id="Core13"
+			load="400"
+			used_mem="295040"
+			>Core_Core13.</core>
+		<core
+			id="Core15"
+			load="400"
+			used_mem="295040"
+			>Core_Core15.</core>
+		<core
+			id="Core14"
+			load="400"
+			used_mem="295040"
+			>Core_Core14.</core>
+	</perfs>
+</data>

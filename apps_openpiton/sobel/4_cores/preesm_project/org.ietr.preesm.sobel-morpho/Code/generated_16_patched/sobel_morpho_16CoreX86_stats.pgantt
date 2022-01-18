@@ -1,0 +1,461 @@
+
+<data>
+	<event
+		start="0"
+		end="100"
+		title="Read_YUV_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Read_YUV_0_(x1).</event>
+	<event
+		start="100"
+		end="200"
+		title="Split_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Split_0_(x1).</event>
+	<event
+		start="200"
+		end="201"
+		title="explode_Split_0_output (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_explode_Split_0_output_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Sobel_0_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Dilation_0_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Erosion_0_(x1).</event>
+	<event
+		start="501"
+		end="502"
+		title="implode_display_0_y (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_implode_display_0_y_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="display_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_display_0_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_1 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Sobel_1_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_1 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Dilation_1_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_1 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Erosion_1_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_2 (x1)"
+		mapping="Core10"
+		color="#c896fa"
+		>Step_Sobel_2_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_2 (x1)"
+		mapping="Core10"
+		color="#c896fa"
+		>Step_Dilation_2_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_2 (x1)"
+		mapping="Core10"
+		color="#c896fa"
+		>Step_Erosion_2_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_3 (x1)"
+		mapping="Core11"
+		color="#c896fa"
+		>Step_Sobel_3_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_3 (x1)"
+		mapping="Core11"
+		color="#c896fa"
+		>Step_Dilation_3_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_3 (x1)"
+		mapping="Core11"
+		color="#c896fa"
+		>Step_Erosion_3_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_4 (x1)"
+		mapping="Core12"
+		color="#c896fa"
+		>Step_Sobel_4_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_4 (x1)"
+		mapping="Core12"
+		color="#c896fa"
+		>Step_Dilation_4_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_4 (x1)"
+		mapping="Core12"
+		color="#c896fa"
+		>Step_Erosion_4_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_5 (x1)"
+		mapping="Core13"
+		color="#c896fa"
+		>Step_Sobel_5_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_5 (x1)"
+		mapping="Core13"
+		color="#c896fa"
+		>Step_Dilation_5_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_5 (x1)"
+		mapping="Core13"
+		color="#c896fa"
+		>Step_Erosion_5_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_6 (x1)"
+		mapping="Core14"
+		color="#c896fa"
+		>Step_Sobel_6_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_6 (x1)"
+		mapping="Core14"
+		color="#c896fa"
+		>Step_Dilation_6_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_6 (x1)"
+		mapping="Core14"
+		color="#c896fa"
+		>Step_Erosion_6_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_7 (x1)"
+		mapping="Core15"
+		color="#c896fa"
+		>Step_Sobel_7_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_7 (x1)"
+		mapping="Core15"
+		color="#c896fa"
+		>Step_Dilation_7_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_7 (x1)"
+		mapping="Core15"
+		color="#c896fa"
+		>Step_Erosion_7_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_8 (x1)"
+		mapping="Core2"
+		color="#c896fa"
+		>Step_Sobel_8_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_8 (x1)"
+		mapping="Core2"
+		color="#c896fa"
+		>Step_Dilation_8_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_8 (x1)"
+		mapping="Core2"
+		color="#c896fa"
+		>Step_Erosion_8_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_9 (x1)"
+		mapping="Core3"
+		color="#c896fa"
+		>Step_Sobel_9_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_9 (x1)"
+		mapping="Core3"
+		color="#c896fa"
+		>Step_Dilation_9_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_9 (x1)"
+		mapping="Core3"
+		color="#c896fa"
+		>Step_Erosion_9_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_10 (x1)"
+		mapping="Core4"
+		color="#c896fa"
+		>Step_Sobel_10_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_10 (x1)"
+		mapping="Core4"
+		color="#c896fa"
+		>Step_Dilation_10_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_10 (x1)"
+		mapping="Core4"
+		color="#c896fa"
+		>Step_Erosion_10_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_11 (x1)"
+		mapping="Core5"
+		color="#c896fa"
+		>Step_Sobel_11_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_11 (x1)"
+		mapping="Core5"
+		color="#c896fa"
+		>Step_Dilation_11_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_11 (x1)"
+		mapping="Core5"
+		color="#c896fa"
+		>Step_Erosion_11_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_12 (x1)"
+		mapping="Core6"
+		color="#c896fa"
+		>Step_Sobel_12_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_12 (x1)"
+		mapping="Core6"
+		color="#c896fa"
+		>Step_Dilation_12_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_12 (x1)"
+		mapping="Core6"
+		color="#c896fa"
+		>Step_Erosion_12_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_13 (x1)"
+		mapping="Core7"
+		color="#c896fa"
+		>Step_Sobel_13_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_13 (x1)"
+		mapping="Core7"
+		color="#c896fa"
+		>Step_Dilation_13_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_13 (x1)"
+		mapping="Core7"
+		color="#c896fa"
+		>Step_Erosion_13_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_14 (x1)"
+		mapping="Core8"
+		color="#c896fa"
+		>Step_Sobel_14_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_14 (x1)"
+		mapping="Core8"
+		color="#c896fa"
+		>Step_Dilation_14_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_14 (x1)"
+		mapping="Core8"
+		color="#c896fa"
+		>Step_Erosion_14_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Sobel_15 (x1)"
+		mapping="Core9"
+		color="#c896fa"
+		>Step_Sobel_15_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Dilation_15 (x1)"
+		mapping="Core9"
+		color="#c896fa"
+		>Step_Dilation_15_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Erosion_15 (x1)"
+		mapping="Core9"
+		color="#c896fa"
+		>Step_Erosion_15_(x1).</event>
+	<perfs>
+		work="5102"
+		span="0"
+		impl_length="602"
+	impl_nbCores="16"
+		impl_nbUsedCores="16"
+		<core
+			id="Core0"
+			load="602"
+			used_mem="687104"
+			>Core_Core0.</core>
+		<core
+			id="Core1"
+			load="300"
+			used_mem="33088"
+			>Core_Core1.</core>
+		<core
+			id="Core3"
+			load="300"
+			used_mem="33088"
+			>Core_Core3.</core>
+		<core
+			id="Core2"
+			load="300"
+			used_mem="33088"
+			>Core_Core2.</core>
+		<core
+			id="Core4"
+			load="300"
+			used_mem="33088"
+			>Core_Core4.</core>
+		<core
+			id="Core5"
+			load="300"
+			used_mem="33088"
+			>Core_Core5.</core>
+		<core
+			id="Core6"
+			load="300"
+			used_mem="33088"
+			>Core_Core6.</core>
+		<core
+			id="Core7"
+			load="300"
+			used_mem="33088"
+			>Core_Core7.</core>
+		<core
+			id="Core8"
+			load="300"
+			used_mem="33088"
+			>Core_Core8.</core>
+		<core
+			id="Core9"
+			load="300"
+			used_mem="33088"
+			>Core_Core9.</core>
+		<core
+			id="Core10"
+			load="300"
+			used_mem="33088"
+			>Core_Core10.</core>
+		<core
+			id="Core11"
+			load="300"
+			used_mem="33088"
+			>Core_Core11.</core>
+		<core
+			id="Core12"
+			load="300"
+			used_mem="33088"
+			>Core_Core12.</core>
+		<core
+			id="Core13"
+			load="300"
+			used_mem="33088"
+			>Core_Core13.</core>
+		<core
+			id="Core15"
+			load="300"
+			used_mem="33088"
+			>Core_Core15.</core>
+		<core
+			id="Core14"
+			load="300"
+			used_mem="33088"
+			>Core_Core14.</core>
+	</perfs>
+</data>

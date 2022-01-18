@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <files>
+        <algorithm url="/org.ietr.preesm.stereo/Algo/stereo_top.pi"/>
+        <architecture url="/org.ietr.preesm.stereo/Archi/16CoreX86.slam"/>
+        <codegenDirectory url="/org.ietr.preesm.stereo/Code/generated"/>
+    </files>
+    <constraints excelUrl="">
+        <constraintGroup>
+            <operator name="Core0"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core1"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core2"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core3"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core4"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core5"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core6"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core7"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core8"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core9"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core10"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core11"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core12"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core13"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core14"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core15"/>
+            <task name="stereo_top/Read_PPM0"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+            <task name="stereo_top/Census_L"/>
+            <task name="stereo_top/Census_R"/>
+            <task name="stereo_top/Split"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Display_RGB1"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+    </constraints>
+    <timings excelUrl="">
+        <memcpyspeed opname="x86" setuptime="1" timeperunit="3.3333333E-7"/>
+    </timings>
+    <simuParams>
+        <mainCore>Core0</mainCore>
+        <mainComNode>shared_mem</mainComNode>
+        <averageDataSize>1000</averageDataSize>
+        <dataTypes>
+            <dataType name="int" size="4"/>
+            <dataType name="uchar" size="1"/>
+            <dataType name="float" size="4"/>
+        </dataTypes>
+        <specialVertexOperators>
+            <specialVertexOperator path="Core3"/>
+            <specialVertexOperator path="Core2"/>
+            <specialVertexOperator path="Core1"/>
+            <specialVertexOperator path="Core0"/>
+            <specialVertexOperator path="Core4"/>
+            <specialVertexOperator path="Core5"/>
+            <specialVertexOperator path="Core6"/>
+            <specialVertexOperator path="Core7"/>
+            <specialVertexOperator path="Core8"/>
+            <specialVertexOperator path="Core9"/>
+            <specialVertexOperator path="Core10"/>
+            <specialVertexOperator path="Core11"/>
+            <specialVertexOperator path="Core12"/>
+            <specialVertexOperator path="Core13"/>
+            <specialVertexOperator path="Core14"/>
+            <specialVertexOperator path="Core15"/>
+        </specialVertexOperators>
+    </simuParams>
+    <parameterValues/>
+    <papifyConfigs xmlUrl=""/>
+    <energyConfigs xmlUrl="">
+        <performanceObjective objectiveEPS="0.0"/>
+    </energyConfigs>
+</scenario>

@@ -1,0 +1,3 @@
+/home/ruaro/my_preesm_apps/org.ietr.preesm.stereo/Code/bin/CMakeFiles/rebuild_cache.dir
+/home/ruaro/my_preesm_apps/org.ietr.preesm.stereo/Code/bin/CMakeFiles/stereo.dir
+/home/ruaro/my_preesm_apps/org.ietr.preesm.stereo/Code/bin/CMakeFiles/edit_cache.dir

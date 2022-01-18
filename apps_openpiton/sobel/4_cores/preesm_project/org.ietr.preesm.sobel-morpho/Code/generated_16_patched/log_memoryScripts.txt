@@ -1,0 +1,36 @@
+# Memory scripts summary
+- Independent match trees : *2*
+- Total number of buffers in these trees: From 35 to 2 buffers.
+- Total size of these buffers: From 623040 to 206272 (66.89265536723164%).
+
+# Match tree optimization log
+## Tree of 18 buffers
+### Original buffer list:
+> [Split_0.input[101376], explode_Split_0_output.input[157696], explode_Split_0_output.output_0[9856], explode_Split_0_output.output_1[9856], explode_Split_0_output.output_2[9856], explode_Split_0_output.output_3[9856], explode_Split_0_output.output_4[9856], explode_Split_0_output.output_5[9856], explode_Split_0_output.output_6[9856], explode_Split_0_output.output_7[9856], explode_Split_0_output.output_8[9856], explode_Split_0_output.output_9[9856], explode_Split_0_output.output_10[9856], explode_Split_0_output.output_11[9856], explode_Split_0_output.output_12[9856], explode_Split_0_output.output_13[9856], explode_Split_0_output.output_14[9856], explode_Split_0_output.output_15[9856]]
+
+### Match application log: 
+- __Step 0 - 16 matches__
+>explode_Split_0_output.output_0[0..9856[=>explode_Split_0_output.input[0..9856[ explode_Split_0_output.output_1[0..9856[=>explode_Split_0_output.input[9856..19712[ explode_Split_0_output.output_10[0..9856[=>explode_Split_0_output.input[98560..108416[ explode_Split_0_output.output_11[0..9856[=>explode_Split_0_output.input[108416..118272[ explode_Split_0_output.output_12[0..9856[=>explode_Split_0_output.input[118272..128128[ explode_Split_0_output.output_13[0..9856[=>explode_Split_0_output.input[128128..137984[ explode_Split_0_output.output_14[0..9856[=>explode_Split_0_output.input[137984..147840[ explode_Split_0_output.output_15[0..9856[=>explode_Split_0_output.input[147840..157696[ explode_Split_0_output.output_2[0..9856[=>explode_Split_0_output.input[19712..29568[ explode_Split_0_output.output_3[0..9856[=>explode_Split_0_output.input[29568..39424[ explode_Split_0_output.output_4[0..9856[=>explode_Split_0_output.input[39424..49280[ explode_Split_0_output.output_5[0..9856[=>explode_Split_0_output.input[49280..59136[ explode_Split_0_output.output_6[0..9856[=>explode_Split_0_output.input[59136..68992[ explode_Split_0_output.output_7[0..9856[=>explode_Split_0_output.input[68992..78848[ explode_Split_0_output.output_8[0..9856[=>explode_Split_0_output.input[78848..88704[ explode_Split_0_output.output_9[0..9856[=>explode_Split_0_output.input[88704..98560[ 
+- __Step 5 - 16 matches__
+>explode_Split_0_output.input[0..9856[=>Split_0.input[-1760..8096[, explode_Split_0_output.input[9856..19712[=>Split_0.input[4576..14432[, explode_Split_0_output.input[19712..29568[=>Split_0.input[10912..20768[, explode_Split_0_output.input[29568..39424[=>Split_0.input[17248..27104[, explode_Split_0_output.input[39424..49280[=>Split_0.input[23584..33440[, explode_Split_0_output.input[49280..59136[=>Split_0.input[29920..39776[, explode_Split_0_output.input[59136..68992[=>Split_0.input[36256..46112[, explode_Split_0_output.input[68992..78848[=>Split_0.input[42592..52448[, explode_Split_0_output.input[78848..88704[=>Split_0.input[48928..58784[, explode_Split_0_output.input[88704..98560[=>Split_0.input[55264..65120[, explode_Split_0_output.input[98560..108416[=>Split_0.input[61600..71456[, explode_Split_0_output.input[108416..118272[=>Split_0.input[67936..77792[, explode_Split_0_output.input[118272..128128[=>Split_0.input[74272..84128[, explode_Split_0_output.input[128128..137984[=>Split_0.input[80608..90464[, explode_Split_0_output.input[137984..147840[=>Split_0.input[86944..96800[, explode_Split_0_output.input[147840..157696[=>Split_0.input[93280..103136[
+
+### Tree summary:
+- From 18 buffers to 1 buffers.
+- From 420288 bytes to 104896 bytes (75.04187604690117%)
+
+### Unapplied matches:
+>
+## Tree of 17 buffers
+### Original buffer list:
+> [implode_display_0_y.y_0[6336], implode_display_0_y.y_1[6336], implode_display_0_y.y_2[6336], implode_display_0_y.y_3[6336], implode_display_0_y.y_4[6336], implode_display_0_y.y_5[6336], implode_display_0_y.y_6[6336], implode_display_0_y.y_7[6336], implode_display_0_y.y_8[6336], implode_display_0_y.y_9[6336], implode_display_0_y.y_10[6336], implode_display_0_y.y_11[6336], implode_display_0_y.y_12[6336], implode_display_0_y.y_13[6336], implode_display_0_y.y_14[6336], implode_display_0_y.y_15[6336], implode_display_0_y.output[101376]]
+
+### Match application log: 
+- __Step 0 - 16 matches__
+>implode_display_0_y.y_0[0..6336[=>implode_display_0_y.output[0..6336[ implode_display_0_y.y_1[0..6336[=>implode_display_0_y.output[6336..12672[ implode_display_0_y.y_10[0..6336[=>implode_display_0_y.output[63360..69696[ implode_display_0_y.y_11[0..6336[=>implode_display_0_y.output[69696..76032[ implode_display_0_y.y_12[0..6336[=>implode_display_0_y.output[76032..82368[ implode_display_0_y.y_13[0..6336[=>implode_display_0_y.output[82368..88704[ implode_display_0_y.y_14[0..6336[=>implode_display_0_y.output[88704..95040[ implode_display_0_y.y_15[0..6336[=>implode_display_0_y.output[95040..101376[ implode_display_0_y.y_2[0..6336[=>implode_display_0_y.output[12672..19008[ implode_display_0_y.y_3[0..6336[=>implode_display_0_y.output[19008..25344[ implode_display_0_y.y_4[0..6336[=>implode_display_0_y.output[25344..31680[ implode_display_0_y.y_5[0..6336[=>implode_display_0_y.output[31680..38016[ implode_display_0_y.y_6[0..6336[=>implode_display_0_y.output[38016..44352[ implode_display_0_y.y_7[0..6336[=>implode_display_0_y.output[44352..50688[ implode_display_0_y.y_8[0..6336[=>implode_display_0_y.output[50688..57024[ implode_display_0_y.y_9[0..6336[=>implode_display_0_y.output[57024..63360[ 
+
+### Tree summary:
+- From 17 buffers to 1 buffers.
+- From 202752 bytes to 101376 bytes (50.0%)
+
+### Unapplied matches:
+>

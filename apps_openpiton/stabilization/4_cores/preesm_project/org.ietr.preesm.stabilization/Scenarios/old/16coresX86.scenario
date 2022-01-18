@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <files>
+        <algorithm url="/org.ietr.preesm.stabilization/Algo/top.pi"/>
+        <architecture url="/org.ietr.preesm.stabilization/Archi/16CoreX86.slam"/>
+        <codegenDirectory url="/org.ietr.preesm.stabilization/Code/generated"/>
+    </files>
+    <constraints excelUrl=""/>
+    <timings excelUrl="/org.ietr.preesm.stabilization/Scenarios/timingJaguar.xls">
+        <memcpyspeed opname="x86" setuptime="1" timeperunit="1.0E-7"/>
+    </timings>
+    <simuParams>
+        <mainCore>Core0</mainCore>
+        <mainComNode>shared_mem</mainComNode>
+        <averageDataSize>1000</averageDataSize>
+        <dataTypes>
+            <dataType name="coordf" size="8"/>
+            <dataType name="coord" size="8"/>
+            <dataType name="uchar" size="1"/>
+        </dataTypes>
+        <specialVertexOperators>
+            <specialVertexOperator path="Core0"/>
+            <specialVertexOperator path="Core1"/>
+            <specialVertexOperator path="Core10"/>
+            <specialVertexOperator path="Core11"/>
+            <specialVertexOperator path="Core2"/>
+            <specialVertexOperator path="Core3"/>
+            <specialVertexOperator path="Core4"/>
+            <specialVertexOperator path="Core5"/>
+            <specialVertexOperator path="Core6"/>
+            <specialVertexOperator path="Core7"/>
+            <specialVertexOperator path="Core9"/>
+            <specialVertexOperator path="Core8"/>
+            <specialVertexOperator path="Core15"/>
+            <specialVertexOperator path="Core14"/>
+            <specialVertexOperator path="Core13"/>
+            <specialVertexOperator path="Core12"/>
+        </specialVertexOperators>
+    </simuParams>
+    <parameterValues/>
+    <papifyConfigs xmlUrl=""/>
+    <energyConfigs xmlUrl="">
+        <performanceObjective objectiveEPS="0.0"/>
+    </energyConfigs>
+</scenario>

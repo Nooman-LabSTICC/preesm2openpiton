@@ -1,0 +1,107 @@
+
+<data>
+	<event
+		start="0"
+		end="100"
+		title="Prod_0 (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_Prod_0_(x1).</event>
+	<event
+		start="100"
+		end="101"
+		title="explode_Prod_0_prod_output (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_explode_Prod_0_prod_output_(x1).</event>
+	<event
+		start="501"
+		end="502"
+		title="implode_Cons_0_cons_input (x1)"
+		mapping="Core0"
+		color="#c896fa"
+		>Step_implode_Cons_0_cons_input_(x1).</event>
+	<event
+		start="101"
+		end="201"
+		title="Processing_0 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Processing_0_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Processing_2 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Processing_2_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Processing_4 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Processing_4_(x1).</event>
+	<event
+		start="401"
+		end="501"
+		title="Processing_6 (x1)"
+		mapping="Core1"
+		color="#c896fa"
+		>Step_Processing_6_(x1).</event>
+	<event
+		start="101"
+		end="201"
+		title="Processing_1 (x1)"
+		mapping="Core2"
+		color="#c896fa"
+		>Step_Processing_1_(x1).</event>
+	<event
+		start="201"
+		end="301"
+		title="Processing_3 (x1)"
+		mapping="Core2"
+		color="#c896fa"
+		>Step_Processing_3_(x1).</event>
+	<event
+		start="301"
+		end="401"
+		title="Processing_5 (x1)"
+		mapping="Core2"
+		color="#c896fa"
+		>Step_Processing_5_(x1).</event>
+	<event
+		start="502"
+		end="602"
+		title="Cons_0 (x1)"
+		mapping="Core3"
+		color="#c896fa"
+		>Step_Cons_0_(x1).</event>
+	<perfs>
+		work="902"
+		span="0"
+		impl_length="602"
+	impl_nbCores="4"
+		impl_nbUsedCores="4"
+		<core
+			id="Core0"
+			load="102"
+			used_mem="3360"
+			>Core_Core0.</core>
+		<core
+			id="Core1"
+			load="400"
+			used_mem="960"
+			>Core_Core1.</core>
+		<core
+			id="Core3"
+			load="100"
+			used_mem="840"
+			>Core_Core3.</core>
+		<core
+			id="Core2"
+			load="300"
+			used_mem="720"
+			>Core_Core2.</core>
+	</perfs>
+</data>

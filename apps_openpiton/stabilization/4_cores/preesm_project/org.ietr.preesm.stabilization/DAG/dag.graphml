@@ -1,0 +1,1727 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="parameters" for="graph" id="parameters"/>
+    <key attr.name="variables" for="graph" id="variables"/>
+    <key attr.name="arguments" for="node" id="arguments"/>
+    <key attr.name="name" attr.type="string" for="graph"/>
+    <key attr.name="kind" attr.type="string" for="graph"/>
+    <key attr.name="SCHEDULE_COST" attr.type="int" for="graph"/>
+    <key attr.name="graph_desc" attr.type="string" for="node"/>
+    <key attr.name="name" attr.type="string" for="node"/>
+    <key attr.name="kind" attr.type="string" for="node"/>
+    <key attr.name="time" attr.type="string" for="node"/>
+    <key attr.name="nb_repeat" attr.type="string" for="node"/>
+    <key attr.name="OperatorDef" attr.type="string" for="node"/>
+    <key attr.name="availableOperators" attr.type="string" for="node"/>
+    <key attr.name="originalId" attr.type="string" for="node"/>
+    <key attr.name="duration" attr.type="int" for="node"/>
+    <key attr.name="schedulingOrder" attr.type="int" for="node"/>
+    <key attr.name="Operator" attr.type="string" for="node"/>
+    <key attr.name="duration" attr.type="string" for="node"/>
+    <key attr.name="dataSize" attr.type="int" for="node"/>
+    <key attr.name="receiverGraphName" attr.type="string" for="node"/>
+    <key attr.name="Weight" attr.type="string" for="edge"/>
+    <graph edgedefault="directed" kind="sdf">
+        <data key="name">top</data>
+        <data key="kind">sdf</data>
+        <data key="SCHEDULE_COST">0</data>
+        <data key="variables">
+            <variable name="width" value="360"/>
+            <variable name="height" value="202"/>
+            <variable name="id" value="0"/>
+            <variable name="border" value="100"/>
+            <variable name="displayWidth" value="560"/>
+            <variable name="displayHeight" value="402"/>
+            <variable name="displaySize" value="225120"/>
+            <variable name="blockWidth" value="32"/>
+            <variable name="blockHeight" value="32"/>
+            <variable name="maxDeltaY" value="21"/>
+            <variable name="maxDeltaX" value="38"/>
+            <variable name="nbVectors" value="66"/>
+            <variable name="Stabilization_displayHeight" value="402"/>
+            <variable name="Stabilization_width" value="360"/>
+            <variable name="Stabilization_displayWidth" value="560"/>
+            <variable name="Stabilization_height" value="202"/>
+            <variable name="Stabilization_border" value="100"/>
+        </data>
+        <node id="ReadYUV" kind="vertex">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@704aaa60</data>
+            <data key="name">ReadYUV</data>
+            <data key="kind">dag_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0)]</data>
+            <data key="originalId">ReadYUV</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">0</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="DisplayYUV" kind="vertex">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@35d655fd</data>
+            <data key="name">DisplayYUV</data>
+            <data key="kind">dag_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0)]</data>
+            <data key="originalId">DisplayYUV</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">66</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="DuplicateY" kind="Broadcast">
+            <data key="name">DuplicateY</data>
+            <data key="kind">dag_broadcast_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">ec7f06b8-1e84-49ac-bd8c-5adbc93b368b</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">56</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="WriteYUV" kind="vertex">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@3ae255c</data>
+            <data key="name">WriteYUV</data>
+            <data key="kind">dag_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">WriteYUV</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">69</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="DuplicateU" kind="Broadcast">
+            <data key="name">DuplicateU</data>
+            <data key="kind">dag_broadcast_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">6d7bad9b-0147-472d-beb7-5df07044d9e9</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">51</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="DuplicateV" kind="Broadcast">
+            <data key="name">DuplicateV</data>
+            <data key="kind">dag_broadcast_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">8d6a4905-eadb-458f-95e9-284edf308826</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">53</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_DuplicateFrame" kind="Broadcast">
+            <data key="name">Stabilization_DuplicateFrame</data>
+            <data key="kind">dag_broadcast_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">aa2156ab-52ce-48d1-9748-2132d892479b</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">13</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_FindDominatingMotion" kind="vertex">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@40c1bc4d</data>
+            <data key="name">Stabilization_FindDominatingMotion</data>
+            <data key="kind">dag_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">FindDominatingMotion</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">19</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_renderFrame" kind="vertex">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@65fd079f</data>
+            <data key="name">Stabilization_renderFrame</data>
+            <data key="kind">dag_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">renderFrame</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">40</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_AccumulateMotion" kind="vertex">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@6203cf60</data>
+            <data key="name">Stabilization_AccumulateMotion</data>
+            <data key="kind">dag_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1)]</data>
+            <data key="originalId">AccumulateMotion</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">24</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_DuplicateAccumulatedMotion" kind="Broadcast">
+            <data key="name">Stabilization_DuplicateAccumulatedMotion</data>
+            <data key="kind">dag_broadcast_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">a8c26d3c-d416-4eb7-b41e-1f99cc946f05</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">26</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_BrY" kind="Broadcast">
+            <data key="name">Stabilization_BrY</data>
+            <data key="kind">dag_broadcast_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">227c2b54-c940-4216-a876-91506db849c0</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">49</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_BrU" kind="Broadcast">
+            <data key="name">Stabilization_BrU</data>
+            <data key="kind">dag_broadcast_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">420d97e6-e1f6-42d7-a137-e7514e382bf7</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">44</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_BrV" kind="Broadcast">
+            <data key="name">Stabilization_BrV</data>
+            <data key="kind">dag_broadcast_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">d9321a7a-9577-4573-a3a6-e32063bdec2c</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">47</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_brFilteredMotion" kind="Broadcast">
+            <data key="name">Stabilization_brFilteredMotion</data>
+            <data key="kind">dag_broadcast_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">84566e55-1cd7-4b3c-9fa3-dfde5ec5aeb6</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">30</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_ComputeBlockMotionVectorss" kind="vertex">
+            <data key="graph_desc">ComputeBlockMotionVectorss.graphml</data>
+            <data key="name">Stabilization_ComputeBlockMotionVectorss</data>
+            <data key="kind">dag_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">ComputeBlockMotionVectorss</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">16</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_renderFrame_init_yPrev" kind="init">
+            <data key="name">Stabilization_renderFrame_init_yPrev</data>
+            <data key="kind">dag_init_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">c112f6b6-4187-4a22-8268-cbf3045fdbc2</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">11</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_BrY_end_out_1" kind="END">
+            <data key="name">Stabilization_BrY_end_out_1</data>
+            <data key="kind">dag_end_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">f32656bc-663e-4cb8-b9ff-63394721a31f</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">63</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_renderFrame_init_uPrev" kind="init">
+            <data key="name">Stabilization_renderFrame_init_uPrev</data>
+            <data key="kind">dag_init_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">20a02527-ce75-48af-acb4-dc68b75d16f7</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">7</data>
+            <data key="Operator">Core3</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_BrU_end_out_1" kind="END">
+            <data key="name">Stabilization_BrU_end_out_1</data>
+            <data key="kind">dag_end_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">0b163809-a2cd-4b9c-85ee-8597de959c0f</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">59</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_renderFrame_init_vPrev" kind="init">
+            <data key="name">Stabilization_renderFrame_init_vPrev</data>
+            <data key="kind">dag_init_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">3474ba10-74e3-4de6-8639-2f35a7b7cad9</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">9</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_BrV_end_out_1" kind="END">
+            <data key="name">Stabilization_BrV_end_out_1</data>
+            <data key="kind">dag_end_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">7e5e68de-ba2b-470a-8389-a51d33005da3</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">61</data>
+            <data key="Operator">Core3</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_AccumulateMotion_init_accumulatedMotionIn" kind="init">
+            <data key="name">Stabilization_AccumulateMotion_init_accumulatedMotionIn</data>
+            <data key="kind">dag_init_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">4e62f7a5-a041-4cb6-b490-070bff509d51</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">1</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_DuplicateAccumulatedMotion_end_out_1" kind="END">
+            <data key="name">Stabilization_DuplicateAccumulatedMotion_end_out_1</data>
+            <data key="kind">dag_end_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">1c6aa777-7a98-402f-ae26-52699d96a0da</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">33</data>
+            <data key="Operator">Core3</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_AccumulateMotion_init_filteredMotionIn" kind="init">
+            <data key="name">Stabilization_AccumulateMotion_init_filteredMotionIn</data>
+            <data key="kind">dag_init_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">2204ad03-a2c4-4680-8d8f-ca1132151b3d</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">3</data>
+            <data key="Operator">Core3</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_brFilteredMotion_end_out_1" kind="END">
+            <data key="name">Stabilization_brFilteredMotion_end_out_1</data>
+            <data key="kind">dag_end_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">33a5165c-d4fa-49c4-b987-3f4868f8bc69</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">35</data>
+            <data key="Operator">Core3</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_ComputeBlockMotionVectorss_init_previousFrame" kind="init">
+            <data key="name">Stabilization_ComputeBlockMotionVectorss_init_previousFrame</data>
+            <data key="kind">dag_init_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">f3ef3fdb-87fe-48b5-96b5-bb4fe41c66e5</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">5</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="Stabilization_DuplicateFrame_end_out_1" kind="END">
+            <data key="name">Stabilization_DuplicateFrame_end_out_1</data>
+            <data key="kind">dag_end_vertex</data>
+            <data key="time">0</data>
+            <data key="nb_repeat">1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[org.preesm.model.slam.impl.ComponentInstanceImpl@25c1f97a (instanceName: Core0), org.preesm.model.slam.impl.ComponentInstanceImpl@45ecae2f (instanceName: Core1), org.preesm.model.slam.impl.ComponentInstanceImpl@5bf9ebbb (instanceName: Core2), org.preesm.model.slam.impl.ComponentInstanceImpl@18ab822 (instanceName: Core3)]</data>
+            <data key="originalId">42efb802-3970-49f0-b929-68ba9ac4040b</data>
+            <data key="duration">-1</data>
+            <data key="schedulingOrder">18</data>
+            <data key="Operator">Core3</data>
+            <data key="OperatorDef">x86</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_AccumulateMotion_init_accumulatedMotionInStabilization_AccumulateMotion_0" kind="vertex">
+            <data key="name">s_Stabilization_AccumulateMotion_init_accumulatedMotionInStabilization_AccumulateMotion_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">1cf56bac-4829-41c2-b0c9-b76075b2aa82</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">2</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">8</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_AccumulateMotion_init_accumulatedMotionInStabilization_AccumulateMotion_0" kind="vertex">
+            <data key="name">r_Stabilization_AccumulateMotion_init_accumulatedMotionInStabilization_AccumulateMotion_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">9a0edb3d-122c-4518-b63d-2ce202bc2449</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">21</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">8</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_AccumulateMotion</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_AccumulateMotion_init_filteredMotionInStabilization_AccumulateMotion_0" kind="vertex">
+            <data key="name">s_Stabilization_AccumulateMotion_init_filteredMotionInStabilization_AccumulateMotion_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">a95c6b8a-f2c0-4cab-a6c2-69aa78c6c34e</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">4</data>
+            <data key="Operator">Core3</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">8</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_AccumulateMotion_init_filteredMotionInStabilization_AccumulateMotion_0" kind="vertex">
+            <data key="name">r_Stabilization_AccumulateMotion_init_filteredMotionInStabilization_AccumulateMotion_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">3b43b3c8-dcc1-4d87-af3b-010a773a2f57</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">22</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">8</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_AccumulateMotion</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_ComputeBlockMotionVectorss_init_previousFrameStabilization_ComputeBlockMotionVectorss_0" kind="vertex">
+            <data key="name">s_Stabilization_ComputeBlockMotionVectorss_init_previousFrameStabilization_ComputeBlockMotionVectorss_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">daa34e76-1959-4def-8058-2e0ddd461b94</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">6</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">72720</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_ComputeBlockMotionVectorss_init_previousFrameStabilization_ComputeBlockMotionVectorss_0" kind="vertex">
+            <data key="name">r_Stabilization_ComputeBlockMotionVectorss_init_previousFrameStabilization_ComputeBlockMotionVectorss_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">07e0cc51-db24-46f0-a01d-e46d9eddee15</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">15</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">72720</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_ComputeBlockMotionVectorss</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_renderFrame_init_uPrevStabilization_renderFrame_0" kind="vertex">
+            <data key="name">s_Stabilization_renderFrame_init_uPrevStabilization_renderFrame_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">84faf5aa-b8b2-4746-a347-b315c766a6ec</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">8</data>
+            <data key="Operator">Core3</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_renderFrame_init_uPrevStabilization_renderFrame_0" kind="vertex">
+            <data key="name">r_Stabilization_renderFrame_init_uPrevStabilization_renderFrame_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">fba4cd02-8175-4991-840d-a5411b498db3</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">36</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_renderFrame</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_renderFrame_init_vPrevStabilization_renderFrame_0" kind="vertex">
+            <data key="name">s_Stabilization_renderFrame_init_vPrevStabilization_renderFrame_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">2b61f00e-4a57-48a0-b8b6-cf8e817a6aa4</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">10</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_renderFrame_init_vPrevStabilization_renderFrame_0" kind="vertex">
+            <data key="name">r_Stabilization_renderFrame_init_vPrevStabilization_renderFrame_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">9465c670-7ed8-4971-8c75-f8638814cdf9</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">37</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_renderFrame</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_renderFrame_init_yPrevStabilization_renderFrame_0" kind="vertex">
+            <data key="name">s_Stabilization_renderFrame_init_yPrevStabilization_renderFrame_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">877ef9f9-c340-4a43-8b28-890dc9066f54</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">12</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">225120</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_renderFrame_init_yPrevStabilization_renderFrame_0" kind="vertex">
+            <data key="name">r_Stabilization_renderFrame_init_yPrevStabilization_renderFrame_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">84f3b473-46bd-4d49-acc4-1c74678e1d3f</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">38</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">225120</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_renderFrame</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_DuplicateFrameStabilization_DuplicateFrame_end_out_1_0" kind="vertex">
+            <data key="name">s_Stabilization_DuplicateFrameStabilization_DuplicateFrame_end_out_1_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">78670fbe-2a1a-4c7f-8f37-66a30c4e03bf</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">14</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">72720</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_DuplicateFrameStabilization_DuplicateFrame_end_out_1_0" kind="vertex">
+            <data key="name">r_Stabilization_DuplicateFrameStabilization_DuplicateFrame_end_out_1_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">5649c299-94b0-4e60-b866-05fbac220b90</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">17</data>
+            <data key="Operator">Core3</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">72720</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_DuplicateFrame_end_out_1</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_FindDominatingMotionStabilization_AccumulateMotion_0" kind="vertex">
+            <data key="name">s_Stabilization_FindDominatingMotionStabilization_AccumulateMotion_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">01291d59-a318-4644-9e7a-9c5260e2e788</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">20</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">8</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_FindDominatingMotionStabilization_AccumulateMotion_0" kind="vertex">
+            <data key="name">r_Stabilization_FindDominatingMotionStabilization_AccumulateMotion_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">f254e226-034f-427a-8e1a-ba45a90477f6</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">23</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">8</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_AccumulateMotion</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_AccumulateMotionStabilization_brFilteredMotion_0" kind="vertex">
+            <data key="name">s_Stabilization_AccumulateMotionStabilization_brFilteredMotion_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">cf39433d-a274-4c95-a256-a93082bc19c2</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">25</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">8</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_AccumulateMotionStabilization_brFilteredMotion_0" kind="vertex">
+            <data key="name">r_Stabilization_AccumulateMotionStabilization_brFilteredMotion_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">96278c55-efae-466b-b2fb-a104c998fa40</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">29</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">8</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_brFilteredMotion</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_DuplicateAccumulatedMotionStabilization_renderFrame_0" kind="vertex">
+            <data key="name">s_Stabilization_DuplicateAccumulatedMotionStabilization_renderFrame_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">5f1a2a49-5514-4db4-8090-602a96ca56f1</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">27</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">8</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_DuplicateAccumulatedMotionStabilization_renderFrame_0" kind="vertex">
+            <data key="name">r_Stabilization_DuplicateAccumulatedMotionStabilization_renderFrame_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">ed152e86-b080-49cf-b301-212eb6e0be5f</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">39</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">8</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_renderFrame</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_DuplicateAccumulatedMotionStabilization_DuplicateAccumulatedMotion_end_out_1_0" kind="vertex">
+            <data key="name">s_Stabilization_DuplicateAccumulatedMotionStabilization_DuplicateAccumulatedMotion_end_out_1_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">f61d15d4-a87e-4a32-b8a0-f09c55a09d9b</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">28</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">8</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_DuplicateAccumulatedMotionStabilization_DuplicateAccumulatedMotion_end_out_1_0" kind="vertex">
+            <data key="name">r_Stabilization_DuplicateAccumulatedMotionStabilization_DuplicateAccumulatedMotion_end_out_1_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">df4aaa32-69ce-4ea0-a10a-f20d90a51bd7</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">32</data>
+            <data key="Operator">Core3</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">8</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_DuplicateAccumulatedMotion_end_out_1</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_brFilteredMotionStabilization_brFilteredMotion_end_out_1_0" kind="vertex">
+            <data key="name">s_Stabilization_brFilteredMotionStabilization_brFilteredMotion_end_out_1_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">74218809-1cfb-4aa8-a751-08bf10ad303a</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">31</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">8</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_brFilteredMotionStabilization_brFilteredMotion_end_out_1_0" kind="vertex">
+            <data key="name">r_Stabilization_brFilteredMotionStabilization_brFilteredMotion_end_out_1_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">b85781ab-eb66-4dd7-a517-84974056fbef</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">34</data>
+            <data key="Operator">Core3</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">8</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_brFilteredMotion_end_out_1</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_renderFrameStabilization_BrU_0" kind="vertex">
+            <data key="name">s_Stabilization_renderFrameStabilization_BrU_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">5c789e3e-a10c-4179-a38f-4a41eeccd875</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">41</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_renderFrameStabilization_BrU_0" kind="vertex">
+            <data key="name">r_Stabilization_renderFrameStabilization_BrU_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">958877e2-7c62-4bf7-acb1-4778eddbd5e1</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">43</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_BrU</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_renderFrameStabilization_BrV_0" kind="vertex">
+            <data key="name">s_Stabilization_renderFrameStabilization_BrV_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">bb41dae2-e2fe-44d7-ab05-5174f0f5280f</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">42</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_renderFrameStabilization_BrV_0" kind="vertex">
+            <data key="name">r_Stabilization_renderFrameStabilization_BrV_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">417864e9-51bd-4112-8608-a9836adc28bf</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">46</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_BrV</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_BrUStabilization_BrU_end_out_1_0" kind="vertex">
+            <data key="name">s_Stabilization_BrUStabilization_BrU_end_out_1_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">07f169b0-97d6-42b5-b48c-096d3cd05eb5</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">45</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_BrUStabilization_BrU_end_out_1_0" kind="vertex">
+            <data key="name">r_Stabilization_BrUStabilization_BrU_end_out_1_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">cd338daf-e1a5-4ba9-867a-88fa6a0c1350</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">58</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_BrU_end_out_1</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_BrVStabilization_BrV_end_out_1_0" kind="vertex">
+            <data key="name">s_Stabilization_BrVStabilization_BrV_end_out_1_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">5de2a3f5-600a-43ab-8e16-c3fc5a0b82ed</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">48</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_BrVStabilization_BrV_end_out_1_0" kind="vertex">
+            <data key="name">r_Stabilization_BrVStabilization_BrV_end_out_1_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">b8948155-83da-47f2-aa16-7d31e26b8b76</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">60</data>
+            <data key="Operator">Core3</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_BrV_end_out_1</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_Stabilization_BrYStabilization_BrY_end_out_1_0" kind="vertex">
+            <data key="name">s_Stabilization_BrYStabilization_BrY_end_out_1_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">fe33e240-14af-418b-9f67-e102c857d9bc</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">50</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">225120</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_Stabilization_BrYStabilization_BrY_end_out_1_0" kind="vertex">
+            <data key="name">r_Stabilization_BrYStabilization_BrY_end_out_1_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">5059a85a-cce7-480c-b041-5968165ccc11</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">62</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">225120</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">Stabilization_BrY_end_out_1</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_DuplicateUDisplayYUV_0" kind="vertex">
+            <data key="name">s_DuplicateUDisplayYUV_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">42f4c6bb-76c3-4336-820f-21bda1d4d66a</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">52</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_DuplicateUDisplayYUV_0" kind="vertex">
+            <data key="name">r_DuplicateUDisplayYUV_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">56bca01d-87d0-44bd-96e5-d49374385e46</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">64</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">DisplayYUV</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_DuplicateVDisplayYUV_0" kind="vertex">
+            <data key="name">s_DuplicateVDisplayYUV_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">fdf8d240-4bc3-4f03-bb15-c722f1ffcdfe</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">54</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_DuplicateVDisplayYUV_0" kind="vertex">
+            <data key="name">r_DuplicateVDisplayYUV_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">fe0f5ced-ca84-45b1-b79b-f4f05eeae0db</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">65</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">DisplayYUV</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_DuplicateVWriteYUV_0" kind="vertex">
+            <data key="name">s_DuplicateVWriteYUV_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">a157b99c-623a-4554-8f83-f238aa12fe4c</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">55</data>
+            <data key="Operator">Core2</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_DuplicateVWriteYUV_0" kind="vertex">
+            <data key="name">r_DuplicateVWriteYUV_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">b1e98395-51d5-41ac-a853-7329e6e17ddc</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">67</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">56280</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">WriteYUV</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="s_DuplicateYWriteYUV_0" kind="vertex">
+            <data key="name">s_DuplicateYWriteYUV_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">f97c117d-6776-4e97-a666-34bc83fcbb6f</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">57</data>
+            <data key="Operator">Core0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">225120</data>
+            <data key="OperatorDef">x86</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <node id="r_DuplicateYWriteYUV_0" kind="vertex">
+            <data key="name">r_DuplicateYWriteYUV_0</data>
+            <data key="OperatorDef">x86</data>
+            <data key="availableOperators">[]</data>
+            <data key="originalId">78d6f53b-44a5-4851-b1e5-c40bedbe48a4</data>
+            <data key="duration">100</data>
+            <data key="schedulingOrder">68</data>
+            <data key="Operator">Core1</data>
+            <data key="OperatorDef">x86</data>
+            <data key="dataSize">225120</data>
+            <data key="OperatorDef">x86</data>
+            <data key="receiverGraphName">WriteYUV</data>
+            <data key="graph_desc"/>
+            <data key="arguments"/>
+        </node>
+        <edge source="DuplicateY" sourceport="out0" target="DisplayYUV" targetport="in0">
+            <data key="Weight">225120</data>
+            <data key="edge_prod">225120</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">225120</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="DuplicateY" sourceport="out1" target="WriteYUV" targetport="in0">
+            <data key="Weight">225120</data>
+            <data key="edge_prod">225120</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">225120</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="DuplicateU" sourceport="out0" target="DisplayYUV" targetport="in1">
+            <data key="Weight">56280</data>
+            <data key="edge_prod">56280</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">56280</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="DuplicateU" sourceport="out1" target="WriteYUV" targetport="in1">
+            <data key="Weight">56280</data>
+            <data key="edge_prod">56280</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">56280</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="DuplicateV" sourceport="out0" target="DisplayYUV" targetport="in2">
+            <data key="Weight">56280</data>
+            <data key="edge_prod">56280</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">56280</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="DuplicateV" sourceport="out1" target="WriteYUV" targetport="in2">
+            <data key="Weight">56280</data>
+            <data key="edge_prod">56280</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">56280</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_DuplicateFrame" sourceport="out0" target="Stabilization_ComputeBlockMotionVectorss" targetport="in0">
+            <data key="Weight">72720</data>
+            <data key="edge_prod">72720</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">72720</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_ComputeBlockMotionVectorss" sourceport="out0" target="Stabilization_FindDominatingMotion" targetport="in0">
+            <data key="Weight">528</data>
+            <data key="edge_prod">528</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">528</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_DuplicateFrame" sourceport="out1" target="Stabilization_renderFrame" targetport="in0">
+            <data key="Weight">72720</data>
+            <data key="edge_prod">72720</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">72720</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_FindDominatingMotion" sourceport="out0" target="Stabilization_AccumulateMotion" targetport="in0">
+            <data key="Weight">8</data>
+            <data key="edge_prod">8</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">8</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_DuplicateAccumulatedMotion" sourceport="out0" target="Stabilization_renderFrame" targetport="in1">
+            <data key="Weight">8</data>
+            <data key="edge_prod">8</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">8</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_AccumulateMotion" sourceport="out0" target="Stabilization_DuplicateAccumulatedMotion" targetport="in0">
+            <data key="Weight">8</data>
+            <data key="edge_prod">8</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">8</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_renderFrame" sourceport="out0" target="Stabilization_BrY" targetport="in0">
+            <data key="Weight">225120</data>
+            <data key="edge_prod">225120</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">225120</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_renderFrame" sourceport="out1" target="Stabilization_BrU" targetport="in0">
+            <data key="Weight">56280</data>
+            <data key="edge_prod">56280</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">56280</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_renderFrame" sourceport="out2" target="Stabilization_BrV" targetport="in0">
+            <data key="Weight">56280</data>
+            <data key="edge_prod">56280</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">56280</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_AccumulateMotion" sourceport="out1" target="Stabilization_brFilteredMotion" targetport="in0">
+            <data key="Weight">8</data>
+            <data key="edge_prod">8</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">8</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_brFilteredMotion" sourceport="out0" target="Stabilization_renderFrame" targetport="in2">
+            <data key="Weight">8</data>
+            <data key="edge_prod">8</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">8</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="ReadYUV" sourceport="out0" target="Stabilization_DuplicateFrame" targetport="in0">
+            <data key="Weight">72720</data>
+            <data key="edge_prod">72720</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">72720</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_BrY" sourceport="out0" target="DuplicateY" targetport="in0">
+            <data key="Weight">225120</data>
+            <data key="edge_prod">225120</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">225120</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="ReadYUV" sourceport="out1" target="Stabilization_renderFrame" targetport="in3">
+            <data key="Weight">36360</data>
+            <data key="edge_prod">36360</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">36360</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_BrU" sourceport="out0" target="DuplicateU" targetport="in0">
+            <data key="Weight">56280</data>
+            <data key="edge_prod">56280</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">56280</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_BrV" sourceport="out0" target="DuplicateV" targetport="in0">
+            <data key="Weight">56280</data>
+            <data key="edge_prod">56280</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">56280</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_renderFrame_init_yPrev" sourceport="out0" target="Stabilization_renderFrame" targetport="in4">
+            <data key="Weight">225120</data>
+            <data key="edge_prod">225120</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">225120</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_BrY" sourceport="out1" target="Stabilization_BrY_end_out_1" targetport="in0">
+            <data key="Weight">225120</data>
+            <data key="edge_prod">225120</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">225120</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_renderFrame_init_uPrev" sourceport="out0" target="Stabilization_renderFrame" targetport="in5">
+            <data key="Weight">56280</data>
+            <data key="edge_prod">56280</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">56280</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_BrU" sourceport="out1" target="Stabilization_BrU_end_out_1" targetport="in0">
+            <data key="Weight">56280</data>
+            <data key="edge_prod">56280</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">56280</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_renderFrame_init_vPrev" sourceport="out0" target="Stabilization_renderFrame" targetport="in6">
+            <data key="Weight">56280</data>
+            <data key="edge_prod">56280</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">56280</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_BrV" sourceport="out1" target="Stabilization_BrV_end_out_1" targetport="in0">
+            <data key="Weight">56280</data>
+            <data key="edge_prod">56280</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">56280</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_AccumulateMotion_init_accumulatedMotionIn" sourceport="out0" target="Stabilization_AccumulateMotion" targetport="in1">
+            <data key="Weight">8</data>
+            <data key="edge_prod">8</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">8</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_DuplicateAccumulatedMotion" sourceport="out1" target="Stabilization_DuplicateAccumulatedMotion_end_out_1" targetport="in0">
+            <data key="Weight">8</data>
+            <data key="edge_prod">8</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">8</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_AccumulateMotion_init_filteredMotionIn" sourceport="out0" target="Stabilization_AccumulateMotion" targetport="in2">
+            <data key="Weight">8</data>
+            <data key="edge_prod">8</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">8</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_brFilteredMotion" sourceport="out1" target="Stabilization_brFilteredMotion_end_out_1" targetport="in0">
+            <data key="Weight">8</data>
+            <data key="edge_prod">8</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">8</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_ComputeBlockMotionVectorss_init_previousFrame" sourceport="out0" target="Stabilization_ComputeBlockMotionVectorss" targetport="in1">
+            <data key="Weight">72720</data>
+            <data key="edge_prod">72720</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">72720</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_DuplicateFrame" sourceport="out2" target="Stabilization_DuplicateFrame_end_out_1" targetport="in0">
+            <data key="Weight">72720</data>
+            <data key="edge_prod">72720</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">72720</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_AccumulateMotion_init_accumulatedMotionIn" sourceport="out1" target="s_Stabilization_AccumulateMotion_init_accumulatedMotionInStabilization_AccumulateMotion_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_AccumulateMotion_init_accumulatedMotionInStabilization_AccumulateMotion_0" sourceport="out0" target="r_Stabilization_AccumulateMotion_init_accumulatedMotionInStabilization_AccumulateMotion_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_AccumulateMotion_init_accumulatedMotionInStabilization_AccumulateMotion_0" sourceport="out0" target="Stabilization_AccumulateMotion" targetport="in3">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_AccumulateMotion_init_filteredMotionIn" sourceport="out1" target="s_Stabilization_AccumulateMotion_init_filteredMotionInStabilization_AccumulateMotion_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_AccumulateMotion_init_filteredMotionInStabilization_AccumulateMotion_0" sourceport="out0" target="r_Stabilization_AccumulateMotion_init_filteredMotionInStabilization_AccumulateMotion_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_AccumulateMotion_init_filteredMotionInStabilization_AccumulateMotion_0" sourceport="out0" target="Stabilization_AccumulateMotion" targetport="in4">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_ComputeBlockMotionVectorss_init_previousFrame" sourceport="out1" target="s_Stabilization_ComputeBlockMotionVectorss_init_previousFrameStabilization_ComputeBlockMotionVectorss_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_ComputeBlockMotionVectorss_init_previousFrameStabilization_ComputeBlockMotionVectorss_0" sourceport="out0" target="r_Stabilization_ComputeBlockMotionVectorss_init_previousFrameStabilization_ComputeBlockMotionVectorss_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_ComputeBlockMotionVectorss_init_previousFrameStabilization_ComputeBlockMotionVectorss_0" sourceport="out0" target="Stabilization_ComputeBlockMotionVectorss" targetport="in2">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_renderFrame_init_uPrev" sourceport="out1" target="s_Stabilization_renderFrame_init_uPrevStabilization_renderFrame_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_renderFrame_init_uPrevStabilization_renderFrame_0" sourceport="out0" target="r_Stabilization_renderFrame_init_uPrevStabilization_renderFrame_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_renderFrame_init_uPrevStabilization_renderFrame_0" sourceport="out0" target="Stabilization_renderFrame" targetport="in7">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_renderFrame_init_vPrev" sourceport="out1" target="s_Stabilization_renderFrame_init_vPrevStabilization_renderFrame_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_renderFrame_init_vPrevStabilization_renderFrame_0" sourceport="out0" target="r_Stabilization_renderFrame_init_vPrevStabilization_renderFrame_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_renderFrame_init_vPrevStabilization_renderFrame_0" sourceport="out0" target="Stabilization_renderFrame" targetport="in8">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_renderFrame_init_yPrev" sourceport="out1" target="s_Stabilization_renderFrame_init_yPrevStabilization_renderFrame_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_renderFrame_init_yPrevStabilization_renderFrame_0" sourceport="out0" target="r_Stabilization_renderFrame_init_yPrevStabilization_renderFrame_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_renderFrame_init_yPrevStabilization_renderFrame_0" sourceport="out0" target="Stabilization_renderFrame" targetport="in9">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_DuplicateFrame" sourceport="out3" target="s_Stabilization_DuplicateFrameStabilization_DuplicateFrame_end_out_1_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_DuplicateFrameStabilization_DuplicateFrame_end_out_1_0" sourceport="out0" target="r_Stabilization_DuplicateFrameStabilization_DuplicateFrame_end_out_1_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_DuplicateFrameStabilization_DuplicateFrame_end_out_1_0" sourceport="out0" target="Stabilization_DuplicateFrame_end_out_1" targetport="in1">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_FindDominatingMotion" sourceport="out1" target="s_Stabilization_FindDominatingMotionStabilization_AccumulateMotion_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_FindDominatingMotionStabilization_AccumulateMotion_0" sourceport="out0" target="r_Stabilization_FindDominatingMotionStabilization_AccumulateMotion_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_FindDominatingMotionStabilization_AccumulateMotion_0" sourceport="out0" target="Stabilization_AccumulateMotion" targetport="in5">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_AccumulateMotion" sourceport="out2" target="s_Stabilization_AccumulateMotionStabilization_brFilteredMotion_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_AccumulateMotionStabilization_brFilteredMotion_0" sourceport="out0" target="r_Stabilization_AccumulateMotionStabilization_brFilteredMotion_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_AccumulateMotionStabilization_brFilteredMotion_0" sourceport="out0" target="Stabilization_brFilteredMotion" targetport="in1">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_DuplicateAccumulatedMotion" sourceport="out2" target="s_Stabilization_DuplicateAccumulatedMotionStabilization_renderFrame_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_DuplicateAccumulatedMotionStabilization_renderFrame_0" sourceport="out0" target="r_Stabilization_DuplicateAccumulatedMotionStabilization_renderFrame_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_DuplicateAccumulatedMotionStabilization_renderFrame_0" sourceport="out0" target="Stabilization_renderFrame" targetport="in10">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_DuplicateAccumulatedMotion" sourceport="out3" target="s_Stabilization_DuplicateAccumulatedMotionStabilization_DuplicateAccumulatedMotion_end_out_1_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_DuplicateAccumulatedMotionStabilization_DuplicateAccumulatedMotion_end_out_1_0" sourceport="out0" target="r_Stabilization_DuplicateAccumulatedMotionStabilization_DuplicateAccumulatedMotion_end_out_1_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_DuplicateAccumulatedMotionStabilization_DuplicateAccumulatedMotion_end_out_1_0" sourceport="out0" target="Stabilization_DuplicateAccumulatedMotion_end_out_1" targetport="in1">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_brFilteredMotion" sourceport="out2" target="s_Stabilization_brFilteredMotionStabilization_brFilteredMotion_end_out_1_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_brFilteredMotionStabilization_brFilteredMotion_end_out_1_0" sourceport="out0" target="r_Stabilization_brFilteredMotionStabilization_brFilteredMotion_end_out_1_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_brFilteredMotionStabilization_brFilteredMotion_end_out_1_0" sourceport="out0" target="Stabilization_brFilteredMotion_end_out_1" targetport="in1">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_renderFrame" sourceport="out3" target="s_Stabilization_renderFrameStabilization_BrU_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_renderFrameStabilization_BrU_0" sourceport="out0" target="r_Stabilization_renderFrameStabilization_BrU_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_renderFrameStabilization_BrU_0" sourceport="out0" target="Stabilization_BrU" targetport="in1">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_renderFrame" sourceport="out4" target="s_Stabilization_renderFrameStabilization_BrV_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_renderFrameStabilization_BrV_0" sourceport="out0" target="r_Stabilization_renderFrameStabilization_BrV_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_renderFrameStabilization_BrV_0" sourceport="out0" target="Stabilization_BrV" targetport="in1">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_BrU" sourceport="out2" target="s_Stabilization_BrUStabilization_BrU_end_out_1_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_BrUStabilization_BrU_end_out_1_0" sourceport="out0" target="r_Stabilization_BrUStabilization_BrU_end_out_1_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_BrUStabilization_BrU_end_out_1_0" sourceport="out0" target="Stabilization_BrU_end_out_1" targetport="in1">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_BrV" sourceport="out2" target="s_Stabilization_BrVStabilization_BrV_end_out_1_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_BrVStabilization_BrV_end_out_1_0" sourceport="out0" target="r_Stabilization_BrVStabilization_BrV_end_out_1_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_BrVStabilization_BrV_end_out_1_0" sourceport="out0" target="Stabilization_BrV_end_out_1" targetport="in1">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="Stabilization_BrY" sourceport="out2" target="s_Stabilization_BrYStabilization_BrY_end_out_1_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_Stabilization_BrYStabilization_BrY_end_out_1_0" sourceport="out0" target="r_Stabilization_BrYStabilization_BrY_end_out_1_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_Stabilization_BrYStabilization_BrY_end_out_1_0" sourceport="out0" target="Stabilization_BrY_end_out_1" targetport="in1">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="DuplicateU" sourceport="out2" target="s_DuplicateUDisplayYUV_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_DuplicateUDisplayYUV_0" sourceport="out0" target="r_DuplicateUDisplayYUV_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_DuplicateUDisplayYUV_0" sourceport="out0" target="DisplayYUV" targetport="in3">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="DuplicateV" sourceport="out2" target="s_DuplicateVDisplayYUV_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_DuplicateVDisplayYUV_0" sourceport="out0" target="r_DuplicateVDisplayYUV_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_DuplicateVDisplayYUV_0" sourceport="out0" target="DisplayYUV" targetport="in4">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="DuplicateV" sourceport="out3" target="s_DuplicateVWriteYUV_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_DuplicateVWriteYUV_0" sourceport="out0" target="r_DuplicateVWriteYUV_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_DuplicateVWriteYUV_0" sourceport="out0" target="WriteYUV" targetport="in3">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="DuplicateY" sourceport="out2" target="s_DuplicateYWriteYUV_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="s_DuplicateYWriteYUV_0" sourceport="out0" target="r_DuplicateYWriteYUV_0" targetport="in0">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+        <edge source="r_DuplicateYWriteYUV_0" sourceport="out0" target="WriteYUV" targetport="in4">
+            <data key="edge_prod">0</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_cons">0</data>
+            <data key="data_type">memUnit</data>
+        </edge>
+    </graph>
+</graphml>

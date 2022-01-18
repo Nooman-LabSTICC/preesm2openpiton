@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="parameters" for="graph" id="parameters"/>
+    <key attr.name="variables" for="graph" id="variables"/>
+    <key attr.name="arguments" for="node" id="arguments"/>
+    <key attr.name="name" attr.type="string" for="graph"/>
+    <key attr.name="kind" attr.type="string" for="graph"/>
+    <key attr.name="name" attr.type="string" for="node"/>
+    <key attr.name="kind" attr.type="string" for="node"/>
+    <key attr.name="port_direction" attr.type="string" for="node"/>
+    <key attr.name="graph_desc" attr.type="string" for="node"/>
+    <key attr.name="nbRepeat" attr.type="int" for="node"/>
+    <key attr.name="edge_cons" attr.type="string" for="edge"/>
+    <key attr.name="edge_delay" attr.type="string" for="edge"/>
+    <key attr.name="edge_prod" attr.type="string" for="edge"/>
+    <key attr.name="data_type" attr.type="string" for="edge"/>
+    <key attr.name="source_port_modifier" attr.type="string" for="edge"/>
+    <key attr.name="target_port_modifier" attr.type="string" for="edge"/>
+    <graph edgedefault="directed" kind="sdf">
+        <data key="name">ComputeBlockMotionVectorss.graphml</data>
+        <data key="kind">sdf</data>
+        <data key="variables">
+            <variable name="width" value="360"/>
+            <variable name="height" value="202"/>
+            <variable name="blockWidth" value="32"/>
+            <variable name="blockHeight" value="32"/>
+            <variable name="maxDeltaX" value="38"/>
+            <variable name="maxDeltaY" value="21"/>
+            <variable name="nbVectors" value="66"/>
+        </data>
+        <node id="frame" port_direction="Input">
+            <data key="name">frame</data>
+            <data key="kind">port</data>
+            <data key="port_direction">Input</data>
+            <data key="arguments"/>
+        </node>
+        <node id="vectors" port_direction="Output">
+            <data key="name">vectors</data>
+            <data key="kind">port</data>
+            <data key="port_direction">Output</data>
+            <data key="arguments"/>
+        </node>
+        <node id="previousFrame" port_direction="Input">
+            <data key="name">previousFrame</data>
+            <data key="kind">port</data>
+            <data key="port_direction">Input</data>
+            <data key="arguments"/>
+        </node>
+        <node id="DivideBlocks">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@107592b9</data>
+            <data key="name">DivideBlocks</data>
+            <data key="kind">vertex</data>
+            <data key="nbRepeat">1</data>
+            <data key="arguments">
+                <argument name="width" value="width"/>
+                <argument name="height" value="height"/>
+                <argument name="blockWidth" value="blockWidth"/>
+                <argument name="blockHeight" value="blockHeight"/>
+                <argument name="nbVectors" value="nbVectors"/>
+            </data>
+        </node>
+        <node id="ComputeBlockMotionVector">
+            <data key="graph_desc">org.preesm.algorithm.codegen.idl.ActorPrototypes@5d1b672e</data>
+            <data key="name">ComputeBlockMotionVector</data>
+            <data key="kind">vertex</data>
+            <data key="nbRepeat">66</data>
+            <data key="arguments">
+                <argument name="width" value="width"/>
+                <argument name="height" value="height"/>
+                <argument name="blockWidth" value="blockWidth"/>
+                <argument name="blockHeight" value="blockHeight"/>
+                <argument name="maxDeltaX" value="maxDeltaX"/>
+                <argument name="maxDeltaY" value="maxDeltaY"/>
+            </data>
+        </node>
+        <node id="DuplicatePreviousFrame">
+            <data key="name">DuplicatePreviousFrame</data>
+            <data key="kind">Broadcast</data>
+            <data key="nbRepeat">1</data>
+            <data key="arguments">
+                <argument name="width" value="width"/>
+                <argument name="height" value="height"/>
+                <argument name="nbVectors" value="nbVectors"/>
+            </data>
+        </node>
+        <edge source="frame" sourceport="frame" target="DivideBlocks" targetport="frame">
+            <data key="edge_cons">72720</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">72720</data>
+            <data key="data_type">uchar</data>
+        </edge>
+        <edge source="DivideBlocks" sourceport="blocksCoord" target="ComputeBlockMotionVector" targetport="blockCoord">
+            <data key="edge_cons">1</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">66</data>
+            <data key="data_type">coord</data>
+            <data key="source_port_modifier">write_only</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="DivideBlocks" sourceport="blocksData" target="ComputeBlockMotionVector" targetport="blockData">
+            <data key="edge_cons">1024</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">67584</data>
+            <data key="data_type">uchar</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="previousFrame" sourceport="previousFrame" target="DuplicatePreviousFrame" targetport="in">
+            <data key="edge_cons">72720</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">72720</data>
+            <data key="data_type">uchar</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+        <edge source="ComputeBlockMotionVector" sourceport="vector" target="vectors" targetport="vectors">
+            <data key="edge_cons">66</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">1</data>
+            <data key="data_type">coord</data>
+        </edge>
+        <edge source="DuplicatePreviousFrame" sourceport="out_0_0" target="ComputeBlockMotionVector" targetport="previousFrame">
+            <data key="edge_cons">72720</data>
+            <data key="edge_delay">0</data>
+            <data key="edge_prod">4799520</data>
+            <data key="data_type">uchar</data>
+            <data key="target_port_modifier">read_only</data>
+        </edge>
+    </graph>
+</graphml>

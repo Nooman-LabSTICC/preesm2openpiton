@@ -1,0 +1,15 @@
+--Stereo
+With: 450 -> 12
+Height: 375 -> 10
+
+--Stab
+With: 360 -> 12
+Height: 202 -> 10
+
+--Sobel
+With: 352 -> 16
+Height: 288 -> 8
+
+--SIFT
+With: 800 -> 12
+Height: 640 -> 10

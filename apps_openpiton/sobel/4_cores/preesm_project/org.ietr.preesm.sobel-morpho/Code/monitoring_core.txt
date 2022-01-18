@@ -1,0 +1,4 @@
+4 = core 3
+8 = core 3
+16 = core 3
+32 = core 3

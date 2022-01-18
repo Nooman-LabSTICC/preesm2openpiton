@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <files>
+        <algorithm url="/org.ietr.preesm.stereo/Algo/stereo_top.pi"/>
+        <architecture url="/org.ietr.preesm.stereo/Archi/32CoreX86.slam"/>
+        <codegenDirectory url="/org.ietr.preesm.stereo/Code/generated"/>
+    </files>
+    <constraints excelUrl="">
+        <constraintGroup>
+            <operator name="Core0"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Read_PPM1"/>
+            <task name="stereo_top/Read_PPM0"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core1"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core10"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/grayL"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core11"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/grayR"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core12"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/cenL"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core13"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/cenR"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core14"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/rgbL"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core15"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/rawDisparity"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core16"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core17"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/rgbL"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core18"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core19"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core2"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Display_rgb0"/>
+            <task name="stereo_top/Display_RGB1"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core20"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core21"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/OffsetGen"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core22"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/DisparityGen"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core23"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core24"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core25"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/RGB2Gray_L"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core26"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeVertWeights"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core27"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/ComputeHorWeights"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core28"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Median_Filter"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core29"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/AggregateCost"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core3"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/RGB2Gray_R"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core30"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core31"/>
+            <task name="stereo_top/Cost_Parallel_Work"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Cost_Parallel_Work/CostConstruction"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core4"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Census_L"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core5"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Census_R"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core6"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Split"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core7"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Median_Filter"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core8"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/lum2RGB"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core9"/>
+            <task name="stereo_top"/>
+            <task name="stereo_top/Write_PPM"/>
+            <task name="stereo_top/Cost_Parallel_Work/disparitySelect"/>
+        </constraintGroup>
+    </constraints>
+    <relativeconstraints excelUrl=""/>
+    <timings excelUrl="">
+        <memcpyspeed opname="x86" setuptime="1" timeperunit="1.0E-7"/>
+    </timings>
+    <simuParams>
+        <mainCore>Core0</mainCore>
+        <mainComNode>shared_mem</mainComNode>
+        <averageDataSize>1000</averageDataSize>
+        <dataTypes>
+            <dataType name="coordf" size="8"/>
+            <dataType name="coord" size="8"/>
+            <dataType name="uchar" size="1"/>
+            <dataType name="float" size="4"/>
+            <dataType name="int" size="4"/>
+        </dataTypes>
+        <specialVertexOperators>
+            <specialVertexOperator path="Core0"/>
+            <specialVertexOperator path="Core1"/>
+            <specialVertexOperator path="Core3"/>
+            <specialVertexOperator path="Core2"/>
+            <specialVertexOperator path="Core4"/>
+            <specialVertexOperator path="Core5"/>
+            <specialVertexOperator path="Core6"/>
+            <specialVertexOperator path="Core7"/>
+            <specialVertexOperator path="Core8"/>
+            <specialVertexOperator path="Core9"/>
+            <specialVertexOperator path="Core10"/>
+            <specialVertexOperator path="Core11"/>
+            <specialVertexOperator path="Core12"/>
+            <specialVertexOperator path="Core13"/>
+            <specialVertexOperator path="Core15"/>
+            <specialVertexOperator path="Core14"/>
+            <specialVertexOperator path="Core16"/>
+            <specialVertexOperator path="Core17"/>
+            <specialVertexOperator path="Core18"/>
+            <specialVertexOperator path="Core19"/>
+            <specialVertexOperator path="Core20"/>
+            <specialVertexOperator path="Core21"/>
+            <specialVertexOperator path="Core22"/>
+            <specialVertexOperator path="Core23"/>
+            <specialVertexOperator path="Core24"/>
+            <specialVertexOperator path="Core25"/>
+            <specialVertexOperator path="Core26"/>
+            <specialVertexOperator path="Core27"/>
+            <specialVertexOperator path="Core28"/>
+            <specialVertexOperator path="Core29"/>
+            <specialVertexOperator path="Core30"/>
+            <specialVertexOperator path="Core31"/>
+        </specialVertexOperators>
+        <numberOfTopExecutions>1</numberOfTopExecutions>
+    </simuParams>
+    <parameterValues/>
+    <papifyConfigs xmlUrl=""/>
+</scenario>

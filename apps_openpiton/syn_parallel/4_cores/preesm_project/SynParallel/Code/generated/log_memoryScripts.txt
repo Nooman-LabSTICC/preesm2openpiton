@@ -1,0 +1,34 @@
+# Memory scripts summary
+- Independent match trees : *2*
+- Total number of buffers in these trees: From 16 to 2 buffers.
+- Total size of these buffers: From 3360 to 1680 (50.0%).
+
+# Match tree optimization log
+## Tree of 8 buffers
+### Original buffer list:
+> [explode_Prod_0_prod_output.input[840], explode_Prod_0_prod_output.prod_output_0[120], explode_Prod_0_prod_output.prod_output_1[120], explode_Prod_0_prod_output.prod_output_2[120], explode_Prod_0_prod_output.prod_output_3[120], explode_Prod_0_prod_output.prod_output_4[120], explode_Prod_0_prod_output.prod_output_5[120], explode_Prod_0_prod_output.prod_output_6[120]]
+
+### Match application log: 
+- __Step 0 - 7 matches__
+>explode_Prod_0_prod_output.prod_output_0[0..120[=>explode_Prod_0_prod_output.input[0..120[ explode_Prod_0_prod_output.prod_output_1[0..120[=>explode_Prod_0_prod_output.input[120..240[ explode_Prod_0_prod_output.prod_output_2[0..120[=>explode_Prod_0_prod_output.input[240..360[ explode_Prod_0_prod_output.prod_output_3[0..120[=>explode_Prod_0_prod_output.input[360..480[ explode_Prod_0_prod_output.prod_output_4[0..120[=>explode_Prod_0_prod_output.input[480..600[ explode_Prod_0_prod_output.prod_output_5[0..120[=>explode_Prod_0_prod_output.input[600..720[ explode_Prod_0_prod_output.prod_output_6[0..120[=>explode_Prod_0_prod_output.input[720..840[ 
+
+### Tree summary:
+- From 8 buffers to 1 buffers.
+- From 1680 bytes to 840 bytes (50.0%)
+
+### Unapplied matches:
+>
+## Tree of 8 buffers
+### Original buffer list:
+> [implode_Cons_0_cons_input.cons_input_0[120], implode_Cons_0_cons_input.cons_input_1[120], implode_Cons_0_cons_input.cons_input_2[120], implode_Cons_0_cons_input.cons_input_3[120], implode_Cons_0_cons_input.cons_input_4[120], implode_Cons_0_cons_input.cons_input_5[120], implode_Cons_0_cons_input.cons_input_6[120], implode_Cons_0_cons_input.output[840]]
+
+### Match application log: 
+- __Step 0 - 7 matches__
+>implode_Cons_0_cons_input.cons_input_0[0..120[=>implode_Cons_0_cons_input.output[0..120[ implode_Cons_0_cons_input.cons_input_1[0..120[=>implode_Cons_0_cons_input.output[120..240[ implode_Cons_0_cons_input.cons_input_2[0..120[=>implode_Cons_0_cons_input.output[240..360[ implode_Cons_0_cons_input.cons_input_3[0..120[=>implode_Cons_0_cons_input.output[360..480[ implode_Cons_0_cons_input.cons_input_4[0..120[=>implode_Cons_0_cons_input.output[480..600[ implode_Cons_0_cons_input.cons_input_5[0..120[=>implode_Cons_0_cons_input.output[600..720[ implode_Cons_0_cons_input.cons_input_6[0..120[=>implode_Cons_0_cons_input.output[720..840[ 
+
+### Tree summary:
+- From 8 buffers to 1 buffers.
+- From 1680 bytes to 840 bytes (50.0%)
+
+### Unapplied matches:
+>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+   <vertices>
+      <vertex id="Core0" x="57" y="75"/>
+      <vertex id="Core1" x="391" y="75"/>
+      <vertex id="Core3" x="391" y="194"/>
+      <vertex id="Core2" x="57" y="194"/>
+      <vertex id="shared_mem" x="224" y="254"/>
+      <vertex id="Core4" x="57" y="313"/>
+      <vertex id="Core5" x="391" y="313"/>
+      <vertex id="Core6" x="57" y="432"/>
+      <vertex id="Core7" x="391" y="432"/>
+      <vertex id="Core8" x="389" y="539"/>
+   </vertices>
+</layout>

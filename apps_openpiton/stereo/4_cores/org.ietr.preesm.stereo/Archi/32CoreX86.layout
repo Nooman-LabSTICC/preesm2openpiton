@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+   <vertices>
+      <vertex id="Core0" x="57" y="78"/>
+      <vertex id="Core1" x="383" y="78"/>
+      <vertex id="Core3" x="383" y="203"/>
+      <vertex id="Core2" x="57" y="203"/>
+      <vertex id="shared_mem" x="220" y="1016"/>
+      <vertex id="Core4" x="57" y="328"/>
+      <vertex id="Core5" x="383" y="328"/>
+      <vertex id="Core6" x="57" y="453"/>
+      <vertex id="Core7" x="383" y="453"/>
+      <vertex id="Core8" x="57" y="578"/>
+      <vertex id="Core9" x="383" y="578"/>
+      <vertex id="Core10" x="57" y="703"/>
+      <vertex id="Core11" x="383" y="703"/>
+      <vertex id="Core12" x="57" y="828"/>
+      <vertex id="Core13" x="383" y="828"/>
+      <vertex id="Core15" x="383" y="953"/>
+      <vertex id="Core14" x="57" y="953"/>
+      <vertex id="Core16" x="383" y="1078"/>
+      <vertex id="Core17" x="383" y="1203"/>
+      <vertex id="Core18" x="383" y="1328"/>
+      <vertex id="Core19" x="383" y="1453"/>
+      <vertex id="Core20" x="383" y="1578"/>
+      <vertex id="Core21" x="383" y="1703"/>
+      <vertex id="Core22" x="383" y="1828"/>
+      <vertex id="Core23" x="383" y="1953"/>
+      <vertex id="Core24" x="57" y="1078"/>
+      <vertex id="Core25" x="57" y="1203"/>
+      <vertex id="Core26" x="57" y="1328"/>
+      <vertex id="Core27" x="57" y="1453"/>
+      <vertex id="Core28" x="57" y="1578"/>
+      <vertex id="Core29" x="57" y="1703"/>
+      <vertex id="Core30" x="57" y="1828"/>
+      <vertex id="Core31" x="57" y="1953"/>
+   </vertices>
+</layout>
